@@ -17,22 +17,25 @@
     </header>
 
     <section>
-            <nav>
+      <nav>
         <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Civilastions</a></li>
-        <li><a href="#">Create Build</a></li>
-      </ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Create Build</a></li>
+          <dropdwn><a href="#">Civilastions</a></dropdwn>
+        </ul>
       </nav>
 
       <article>
-        <h1>Welcome</h1>
-        <p>
-          This is a repository for Age of Empires IV players to find the highest rated builds for the civilastions found in the game.
-        </p>
-        <p>
-          As well as find links to rated builds you can also create your own build through the provided template.
-        </p>
+          <h1>Welcome</h1>
+          <p>
+            This is a repository for Age of Empires IV players to find the highest rated builds for the civilisations found in the game.
+          </p>
+          <p>
+            As well as find links to rated builds you can also create your own build through the provided template.
+          </p>
+        <div class="about">
+          <button @click="getBuilds">Get Builds</button>
+        </div>
       </article>
     </section>
 
@@ -41,6 +44,24 @@
     </footer>
   </div>
 </template>
+
+<script>
+import dropdwn from '../src/components/Dropdown.vue'
+
+export default {
+  components: {
+    dropdwn
+  },
+  methods: {
+    getBuilds () {
+      console.log('Getting Builds!')
+      fetch('http://localhost:3000/builds')
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 * {
