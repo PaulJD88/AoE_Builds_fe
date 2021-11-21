@@ -2,18 +2,6 @@
   <div>
     <header>
       <h2>Age of Empires IV</h2>
-      <p>
-        <ul>
-          <button><a href="#">The Abbasid Dynasty</a></button>
-          <button><a href="#">The Chinese</a></button>
-          <button><a href="#">The Delhi Sultanate</a></button>
-          <button><a href="#">The English</a></button>
-          <button><a href="#">The French</a></button>
-          <button><a href="#">The Holy Roman Empire</a></button>
-          <button><a href="#">The Mongols</a></button>
-          <button><a href="#">The Rus</a></button>
-        </ul>
-      </p>
     </header>
 
     <section>
@@ -21,7 +9,7 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Create Build</a></li>
-          <dropdwn><a href="#">Civilastions</a></dropdwn>
+          <dropdwn>Civilastions</dropdwn>
         </ul>
       </nav>
 

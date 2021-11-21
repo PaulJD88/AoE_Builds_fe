@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 .dropbtn {
   background-color: #4caf50;
   color: white;
