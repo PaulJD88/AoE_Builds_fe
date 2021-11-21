@@ -1,32 +1,105 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <header>
+      <h2>Age of Empires IV</h2>
+      <p>
+        <ul>
+          <button><a href="#">The Abbasid Dynasty</a></button>
+          <button><a href="#">The Chinese</a></button>
+          <button><a href="#">The Delhi Sultanate</a></button>
+          <button><a href="#">The English</a></button>
+          <button><a href="#">The French</a></button>
+          <button><a href="#">The Holy Roman Empire</a></button>
+          <button><a href="#">The Mongols</a></button>
+          <button><a href="#">The Rus</a></button>
+        </ul>
+      </p>
+    </header>
+
+    <section>
+            <nav>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Civilastions</a></li>
+        <li><a href="#">Create Build</a></li>
+      </ul>
+      </nav>
+
+      <article>
+        <h1>Welcome</h1>
+        <p>
+          This is a repository for Age of Empires IV players to find the highest rated builds for the civilastions found in the game.
+        </p>
+        <p>
+          As well as find links to rated builds you can also create your own build through the provided template.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>The End</p>
+    </footer>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  box-sizing: border-box;
 }
 
-#nav {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  background-color: #666;
   padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+nav {
+  float: left;
+  width: 15%;
+  background: #ccc;
+  padding: 20px;
+  height: 535px;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  height: 530px;
+  background-color: #f1f1f1;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
   }
 }
 </style>
