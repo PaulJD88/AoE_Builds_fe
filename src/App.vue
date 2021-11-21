@@ -28,7 +28,7 @@
     </section>
 
     <footer>
-      <p>The End</p>
+      <button v-html="AoESite"></button>
     </footer>
   </div>
 </template>
@@ -37,6 +37,12 @@
 import dropdwn from '../src/components/Dropdown.vue'
 
 export default {
+  data () {
+    return {
+      AoESite:
+      '<a href="https://www.ageofempires.com/"target="_blank">🏰Age of Empires🏰</a>'
+    }
+  },
   components: {
     dropdwn
   },
@@ -63,7 +69,7 @@ body {
 }
 
 header {
-  background-color: #666;
+  background-color: #183540;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -73,9 +79,9 @@ header {
 nav {
   float: left;
   width: 15%;
-  background: #ccc;
+  background: #2C5159;
   padding: 20px;
-  height: 535px;
+  height: 530px;
 }
 
 nav ul {
@@ -88,7 +94,7 @@ article {
   padding: 20px;
   width: 85%;
   height: 530px;
-  background-color: #f1f1f1;
+  background-color: #D9D9D9;
 }
 
 section::after {
@@ -98,7 +104,7 @@ section::after {
 }
 
 footer {
-  background-color: #777;
+  background-color: #183540;
   padding: 10px;
   text-align: center;
   color: white;
