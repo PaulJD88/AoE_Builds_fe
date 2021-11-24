@@ -1,12 +1,18 @@
 <template>
-  <div class="about">
+  <div class="build">
     <button @click="getBuilds">Get Builds</button>
-    <h1>This is an about page</h1>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'BuildSelect',
+  props: {
+    buildslct: Object
+  },
+  data () {
+    return {}
+  },
   methods: {
     getBuilds () {
       console.log('Getting Builds!')
@@ -19,4 +25,12 @@ export default {
 </script>
 
 <style>
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 </style>

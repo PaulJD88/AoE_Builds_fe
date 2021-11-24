@@ -2,29 +2,31 @@
   <div>
     <header>
       <h2>Age of Empires IV</h2>
+      <h3>Build Rankings</h3>
     </header>
 
     <section>
       <nav>
         <ul>
-          <li><router-link to="/cover">Home</router-link></li>
-          <li><router-link to="/create">Create Build</router-link></li>
-          <dropdwn>Civilastions</dropdwn>
+          <button><router-link to="/cover">Home</router-link></button>
+          <button><router-link to="/create">Create Build</router-link></button>
         </ul>
       </nav>
 
       <article>
-          <h1>Welcome</h1>
-          <p>
-            This is a repository for Age of Empires IV players to find the highest rated builds for the civilisations found in the game.
-          </p>
-          <p>
-            As well as find links to rated builds you can also create your own build through the provided template.
-          </p>
-        <div class="about">
-          <button @click="getBuilds">Get Builds</button>
-        </div>
+        <h1>Welcome</h1>
+        <p>
+          This is a repository for Age of Empires IV players to find the highest
+          rated builds for the civilisations found in the game.
+        </p>
+        <p>
+          As well as find links to rated builds you can also create your own
+          build through the provided template.
+        </p>
+        <buildslct></buildslct>
       </article>
+
+      <div class="sidebar"></div>
     </section>
 
     <footer>
@@ -34,25 +36,17 @@
 </template>
 
 <script>
-import dropdwn from '../src/components/Dropdown.vue'
+import buildslct from '../src/components/BuildSelect.vue'
 
 export default {
   data () {
     return {
       AoESite:
-      '<a href="https://www.ageofempires.com/"target="_blank">🏰Age of Empires🏰</a>'
+        '<a href="https://www.ageofempires.com/"target="_blank">🏰Age of Empires🏰</a>'
     }
   },
   components: {
-    dropdwn
-  },
-  methods: {
-    getBuilds () {
-      console.log('Getting Builds!')
-      fetch('http://localhost:3000/builds')
-        .then((response) => response.json())
-        .then((data) => console.log(data))
-    }
+    buildslct
   }
 }
 </script>
@@ -70,7 +64,7 @@ body {
 
 header {
   background-color: #183540;
-  padding: 30px;
+  padding: 25px;
   text-align: center;
   font-size: 35px;
   color: white;
@@ -78,10 +72,18 @@ header {
 
 nav {
   float: left;
-  width: 15%;
-  background: #2C5159;
+  width: 10%;
+  background: #2c5159;
   padding: 20px;
-  height: 530px;
+  height: 700px;
+}
+
+.sidebar {
+  float: right;
+  width: 10%;
+  background: #2c5159;
+  padding: 20px;
+  height: 700px;
 }
 
 nav ul {
@@ -89,12 +91,21 @@ nav ul {
   padding: 0;
 }
 
+button {
+  background-color: #0a2126;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
 article {
   float: left;
   padding: 20px;
-  width: 85%;
-  height: 530px;
-  background-color: #D9D9D9;
+  width: 80%;
+  height: 700px;
+  background-color: #d9d9d9;
 }
 
 section::after {
@@ -112,7 +123,7 @@ footer {
 
 @media (max-width: 600px) {
   nav,
-  article {
+  article, .sidebar {
     width: 100%;
     height: auto;
   }

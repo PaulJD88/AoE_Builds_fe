@@ -29,7 +29,7 @@ export default {
 
 <style scoped lang="scss">
 .dropbtn {
-  background-color: #4caf50;
+  background-color: #0A2126;
   color: white;
   padding: 16px;
   font-size: 16px;
