@@ -7,8 +7,8 @@
     <section>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Create Build</a></li>
+          <li><router-link to="/cover">Home</router-link></li>
+          <li><router-link to="/create">Create Build</router-link></li>
           <dropdwn>Civilastions</dropdwn>
         </ul>
       </nav>

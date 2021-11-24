@@ -2,14 +2,14 @@
   <div class="dropdown">
     <button class="dropbtn">Civilisations</button>
     <div class="dropdown-content">
-      <a href="#">The Abbasid Dynasty</a>
-      <a href="#">The Chinese</a>
-      <a href="#">The Delhi Sultanate</a>
-      <a href="#">The English</a>
-      <a href="#">The French</a>
-      <a href="#">The Holy Roman Empire</a>
-      <a href="#">The Mongols</a>
-      <a href="#">The Rus</a>
+      <li><router-link to="/abbasid">The Abbasid Dynasty</router-link></li>
+      <li><router-link to="/chinese">The Chinese</router-link></li>
+      <li><router-link to="/delhi">The Delhi Sultanate</router-link></li>
+      <li><router-link to="/english">The English</router-link></li>
+      <li><router-link to="/french">The French</router-link></li>
+      <li><router-link to="/romans">The Holy Roman Empire</router-link></li>
+      <li><router-link to="/mongols">The Mongols</router-link></li>
+      <li><router-link to="/rus">The Rus</router-link></li>
     </div>
   </div>
 </template>
