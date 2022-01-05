@@ -9,7 +9,9 @@
     As well as find links to rated builds you can also create your own build
     through the provided template.
   </p>
+  <h2>Top Builds</h2>
 </article>
+
 </template>
 
 <script>

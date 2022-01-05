@@ -8,8 +8,11 @@
     <section>
       <nav>
         <ul>
-          <button><router-link to="/create">Create Build</router-link></button>
           <button><router-link to="/">Home</router-link></button>
+          <button><router-link to="/create">Create Build</router-link></button>
+          <button>
+            <router-link to="/civilisations">Civilisations</router-link>
+          </button>
         </ul>
       </nav>
 
@@ -115,7 +118,8 @@ footer {
 
 @media (max-width: 600px) {
   nav,
-  article, .sidebar {
+  article,
+  .sidebar {
     width: 100%;
     height: auto;
   }
