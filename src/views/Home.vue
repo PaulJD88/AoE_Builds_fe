@@ -1,5 +1,5 @@
 <template>
-<article>
+<div>
   <h1>Welcome</h1>
   <p>
     This is a repository for Age of Empires IV players to find the highest rated
@@ -9,9 +9,7 @@
     As well as find links to rated builds you can also create your own build
     through the provided template.
   </p>
-  <h2>Top Builds</h2>
-</article>
-
+</div>
 </template>
 
 <script>

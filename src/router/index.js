@@ -19,14 +19,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/CreateBuild.vue')
   },
   {
-    path: '/civilisations',
-    name: 'Civilisations',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Civilisations.vue')
-  },
-  {
     path: '/abbasid',
     name: 'Abbasid Dynasty',
     // route level code-splitting

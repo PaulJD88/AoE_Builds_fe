@@ -11,17 +11,18 @@
           <button><router-link to="/">Home</router-link></button>
           <button><router-link to="/create">Create Build</router-link></button>
           <button>
-            <router-link to="/civilisations">Civilisations</router-link>
+            <dropdwn></dropdwn>
           </button>
         </ul>
       </nav>
 
       <article>
         <router-view />
-        <buildslct></buildslct>
       </article>
 
-      <div class="sidebar"></div>
+      <div class="sidebar">
+        <h2>Top Builds</h2>
+      </div>
     </section>
 
     <footer>
@@ -31,8 +32,7 @@
 </template>
 
 <script>
-import buildslct from '../src/components/BuildSelect.vue'
-
+import dropdwn from '../src/components/Dropdown.vue'
 export default {
   data () {
     return {
@@ -41,7 +41,7 @@ export default {
     }
   },
   components: {
-    buildslct
+    dropdwn
   }
 }
 </script>
