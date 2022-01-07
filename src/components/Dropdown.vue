@@ -67,7 +67,7 @@ export default {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #183540;
 }
 
 </style>
