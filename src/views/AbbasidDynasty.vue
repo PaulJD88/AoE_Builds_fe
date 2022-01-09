@@ -1,6 +1,6 @@
 <template>
 <div>
-<h1> Abbasid Dynasty </h1>
+<h1> The Abbasid Dynasty </h1>
 <buildslct></buildslct>
 </div>
 </template>

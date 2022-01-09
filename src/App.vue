@@ -119,7 +119,8 @@ footer {
 @media (max-width: 600px) {
   nav,
   article,
-  .sidebar {
+  .sidebar
+  {
     width: 100%;
     height: auto;
   }
