@@ -11,7 +11,9 @@ export default {
     buildslct: Object
   },
   data () {
-    return {}
+    return {
+      showBuild: []
+    }
   },
   methods: {
     getBuilds () {

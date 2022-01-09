@@ -87,7 +87,7 @@ nav ul {
 }
 
 button {
-  background-color: #0a2126;
+  background-color: #183540;
   color: white;
   padding: 16px;
   font-size: 16px;

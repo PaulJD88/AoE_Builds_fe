@@ -28,8 +28,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.dropbtn {
-  background-color: #0A2126;
+button.dropbtn {
+  background-color: #183540;
   color: white;
   padding: 16px;
   font-size: 16px;
