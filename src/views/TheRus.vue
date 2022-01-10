@@ -1,18 +1,32 @@
 <template>
 <div>
 <h1> The Rus </h1>
-<buildslct></buildslct>
-</div>
+    <div class="build">
+      <button @click="getBuilds">Get Builds</button>
+      <div class="builds" v-for="build in showBuilds" :key="build.id"></div>
+    </div>
+  </div>
 </template>
 
 <script>
-import buildslct from '../components/BuildSelect.vue'
 export default {
   data () {
-    return {}
+    return {
+      showBuilds: []
+    }
   },
-  components: {
-    buildslct
+  methods: {
+    getBuilds () {
+      console.log('Getting Builds!')
+      fetch('http://localhost:3000/builds', {
+        method: 'GET'
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .then((json) => {
+          this.showBuilds = json
+        })
+    }
   }
 }
 </script>

@@ -12,15 +12,20 @@ export default {
   },
   data () {
     return {
-      showBuild: []
+      showBuilds: []
     }
   },
   methods: {
     getBuilds () {
       console.log('Getting Builds!')
-      fetch('http://localhost:3000/builds')
+      fetch('http://localhost:3000/builds', {
+        method: 'GET'
+      })
         .then((response) => response.json())
         .then((data) => console.log(data))
+        .then((json) => {
+          this.showBuilds = json
+        })
     }
   }
 }
