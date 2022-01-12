@@ -47,12 +47,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oldenburg', cursive;
   padding: 0%;
   margin: 0%;
 }
@@ -91,6 +93,7 @@ button {
   color: white;
   padding: 16px;
   font-size: 16px;
+  font-family: 'Oldenburg', cursive;
   border: none;
   cursor: pointer;
 }
