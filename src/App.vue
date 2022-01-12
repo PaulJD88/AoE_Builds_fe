@@ -7,7 +7,7 @@
 
     <section>
       <nav>
-        <ul>
+        <ul class="corner-button">
           <button><router-link to="/">Home</router-link></button>
           <button><router-link to="/create">Create Build</router-link></button>
           <button>

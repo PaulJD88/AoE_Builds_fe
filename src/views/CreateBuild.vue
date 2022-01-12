@@ -44,12 +44,14 @@ textarea {
   margin: 10px;
   width: 100%;
   height: 150px;
+  font-family: 'Oldenburg', cursive;
 }
 
 input {
   height: 25px;
   width: 225px;
   margin: 8px;
+  font-family: 'Oldenburg', cursive;
 }
 
 .icon {
@@ -63,6 +65,7 @@ button {
   text-transform: uppercase;
   background: grey;
   border: none;
+  border-radius: 2px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
   transition: 0.25s all ease;
   width: 50%;
