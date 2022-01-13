@@ -14,6 +14,7 @@
         <textarea id="caps" v-model="buildOrder" required></textarea>
       </div>
       <button :class="[civName ? activeClass : '']" type="submit">Submit</button>
+      <button @click="addBuild">Get Beers</button>
     </form>
     </div>
 </template>
@@ -27,6 +28,27 @@ export default {
       buildOrder: 'Queue up 6 \n villagers....',
       response: '',
       activeClass: 'active'
+    }
+  },
+  methods: {
+    addBuild () {
+      fetch('http://localhost:3000/builds', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: this.civName,
+          subheading: this.buildName,
+          build_order: this.buildOrder
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8'
+        }
+      })
+        .then(() => {
+          console.log('Success')
+        })
+        .catch(error => {
+          console.log(error)
+        })
     }
   }
 }
