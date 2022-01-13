@@ -24,7 +24,7 @@ export default {
     return {
       civName: '',
       buildName: '',
-      buildOrder: 'Queue up 6 villagers....',
+      buildOrder: 'Queue up 6 \n villagers....',
       response: '',
       activeClass: 'active'
     }

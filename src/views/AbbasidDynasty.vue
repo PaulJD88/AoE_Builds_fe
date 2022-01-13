@@ -2,9 +2,12 @@
   <div>
     <h1>The Abbasid Dynasty</h1>
     <div class="build">
-      <button @click="getBuilds">Get Builds</button>
-      <div class="builds" v-for="build in showBuilds" :key="build.id"></div>
-     </div>
+      <div class="builds" v-for="build in showBuilds" :key="build.id">
+        {{ build }}
+        <h1>{{ build.name }}</h1>
+        <button @click="getBuilds">Get Builds</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -22,11 +25,14 @@ export default {
         method: 'GET'
       })
         .then((response) => response.json())
-        .then((data) => console.log(data))
         .then((json) => {
+          console.log(json)
           this.showBuilds = json
         })
     }
+  },
+  created: function () {
+    this.getBuilds()
   }
 }
 </script>
