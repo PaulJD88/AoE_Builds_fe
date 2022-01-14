@@ -94,6 +94,7 @@ body {
   padding: 0%;
   margin: 0%;
   place-items: center;
+  background: linear-gradient(90deg, #2c5159, #d7e1ec);
 }
 
 header {
@@ -107,7 +108,6 @@ header {
 nav {
   float: left;
   width: 10%;
-  background: #2c5159;
   padding: 20px;
   height: 700px;
 }
@@ -115,7 +115,6 @@ nav {
 .sidebar {
   float: right;
   width: 10%;
-  background: #2c5159;
   padding: 20px;
   height: 700px;
 }
@@ -141,6 +140,7 @@ article {
   width: 80%;
   height: 700px;
   background-color: #d9d9d9;
+  border: 20px black;
 }
 
 section::after {
@@ -155,7 +155,7 @@ footer {
   width: 100%;
   padding-bottom: 10px;
   place-items: center;
-  background: linear-gradient(90deg, #183540, #d7e1ec);
+  background: linear-gradient(90deg, #2c5159, #d7e1ec);
 }
 
 *:focus,

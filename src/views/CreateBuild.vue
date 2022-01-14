@@ -42,6 +42,7 @@ export default {
         body: JSON.stringify({
           name: this.civName,
           subheading: this.buildName,
+          url: this.buildUrl,
           build_order: this.buildOrder
         }),
         headers: {
