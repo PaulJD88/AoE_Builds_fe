@@ -1,5 +1,9 @@
 <template>
   <div>
+        <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <header>
       <h2>Age of Empires IV</h2>
       <h3>Build Rankings</h3>
@@ -29,7 +33,7 @@
       <div class="wrapper">
         <div class="icon AoESite">
           <div class="tooltip" v-html="AoESite">Age of Empires</div>
-          <span><i class="fab fa-fort-awesome-alt"></i></span>
+          <span><i class="fab fa-fort-awesome"/></span>
         </div>
         <div class="icon facebook">
           <div class="tooltip">Facebook</div>
