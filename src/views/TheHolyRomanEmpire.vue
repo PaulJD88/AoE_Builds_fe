@@ -1,9 +1,12 @@
 <template>
-<div>
-<h1> The Holy Roman Empire </h1>
+  <div>
+    <h1>The Holy Roman Empire</h1>
     <div class="build">
-      <button @click="getBuilds">Get Builds</button>
-      <div class="builds" v-for="build in showBuilds" :key="build.id"></div>
+      <div class="builds" v-for="build in showBuilds" :key="build.id">
+            <h1>{{ build.name }}</h1>
+            <h2>{{ build.subheading }}</h2>
+            <p>{{ build.url }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -22,11 +25,14 @@ export default {
         method: 'GET'
       })
         .then((response) => response.json())
-        .then((data) => console.log(data))
         .then((json) => {
+          console.log(json)
           this.showBuilds = json
         })
     }
+  },
+  created: function () {
+    this.getBuilds()
   }
 }
 </script>
