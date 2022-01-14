@@ -10,8 +10,12 @@
         <input id="build" type="text" v-model="buildName" required />
       </div>
       <div>
-        <label for="caps">Build order:</label><br />
-        <textarea id="caps" v-model="buildOrder" required></textarea>
+        <label for="buildurl">Build Url:</label><br />
+        <input id="url" v-model="buildUrl" required />
+      </div>
+      <div>
+        <label for="buildorder">Build order:</label><br />
+        <textarea id="order" v-model="buildOrder" required></textarea>
       </div>
       <button :class="[civName ? activeClass : '']" type="submit">Submit</button>
       <button @click="addBuild">Get Beers</button>
@@ -25,7 +29,8 @@ export default {
     return {
       civName: '',
       buildName: '',
-      buildOrder: 'Queue up 6 \n villagers....',
+      buildUrl: '',
+      buildOrder: 'EXAMPLE: \n- Queue up 6 villagers \n- All initial Villagers to the starting sheep \n- Send your scout out (micro it to gather Sheep and find the enemy Town Center) \n- 1 Villager on Gold \n- 1 Villager on House, then Gold \n- Queue up 2 more villagers and send them to Wood \n- 8 Villagers on Sheep \n- 1 Villager on Lumbercamp, then Wood \n- 1 Villager on Wood \n- At 100 gold, send your mining villagers to walk towards to center of the map \n- Build a landmark with the villagers that were mining \n- Queue up 1 more villager, send them to Wood \n- Queue up 1 more villager, send them to Sheep \n- Send 2 Villagers that were on Sheep to the Landmark \n- Send 1 Villager that was on Wood to the Landmark \n- Once the Landmark is ready, send those 4 Villagers to make a Mill at a nearby Food (Deer if possible) \n- Queue 2 Longbowmen and send them to the enemy base (harass their mines, mills, and Lumbercamps) \n- Keep training Longbowmen and harassing the enemy while improving your economy',
       response: '',
       activeClass: 'active'
     }
@@ -65,14 +70,15 @@ form {
 textarea {
   margin: 10px;
   width: 100%;
-  height: 150px;
+  height: 300px;
   font-family: 'Oldenburg', cursive;
+  color: grey;
 }
 
 input {
-  height: 25px;
+  height: 30px;
   width: 225px;
-  margin: 8px;
+  margin: 10px;
   font-family: 'Oldenburg', cursive;
 }
 
