@@ -36,24 +36,24 @@
           <span><i class="fab fa-fort-awesome"/></span>
         </div>
         <div class="icon facebook">
-          <div class="tooltip">Facebook</div>
+          <div class="tooltip" v-html="Facebook">Facebook</div>
           <span><i class="fab fa-facebook-f"></i></span>
         </div>
         <div class="icon twitter">
-          <div class="tooltip">Twitter</div>
+          <div class="tooltip" v-html="Twitter">Twitter</div>
           <span><i class="fab fa-twitter"></i></span>
         </div>
         <div class="icon instagram">
-          <div class="tooltip">Instagram</div>
+          <div class="tooltip" v-html="Instagram">Instagram</div>
           <span><i class="fab fa-instagram"></i></span>
         </div>
-        <div class="icon github">
-          <div class="tooltip">Github</div>
-          <span><i class="fab fa-github"></i></span>
-        </div>
         <div class="icon youtube">
-          <div class="tooltip">Youtube</div>
+          <div class="tooltip" v-html="Youtube">Youtube</div>
           <span><i class="fab fa-youtube"></i></span>
+        </div>
+        <div class="icon github">
+          <div class="tooltip" v-html="GitHub">My Github</div>
+          <span><i class="fab fa-github"></i></span>
         </div>
       </div>
     </footer>
@@ -66,7 +66,14 @@ export default {
   data () {
     return {
       AoESite:
-        '<a href="https://www.ageofempires.com/"target="_blank">Age of Empires</a>'
+        '<a href="https://www.ageofempires.com/"target="_blank">Age of Empires</a>',
+      Facebook:
+        '<a href="https://www.facebook.com/ageofempires"target="_blank">Facebook</a>',
+      Twitter: '<a href="https://twitter.com/AgeOfEmpires/"target="_blank">Twitter</a>',
+      Instagram:
+        '<a href="https://www.instagram.com/ageofempiresgame/"target="_blank">Instagram</a>',
+      Youtube: '<a href="https://www.youtube.com/user/officialageofempires"target="_blank">Youtube</a>',
+      GitHub: '<a href="https://github.com/PaulJD88"target="_blank">GitHub</a>'
     }
   },
   components: {
@@ -86,6 +93,7 @@ body {
   font-family: "Oldenburg", cursive;
   padding: 0%;
   margin: 0%;
+  place-items: center;
 }
 
 header {
@@ -142,11 +150,20 @@ section::after {
 }
 
 footer {
-  background-color: #183540;
-  padding: 10px;
-  text-align: center;
-  color: white;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 10px;
+  place-items: center;
+  background: linear-gradient(90deg, #183540, #d7e1ec);
 }
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .wrapper {
   display: inline-flex;
 }
@@ -185,7 +202,7 @@ footer {
 
 .wrapper .tooltip::before {
   position: absolute;
-  content: "";
+  content: '';
   height: 8px;
   width: 8px;
   background-color: #ffffff;
