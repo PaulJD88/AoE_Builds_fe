@@ -1,16 +1,18 @@
 <template>
   <div>
-        <link rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
     <header>
       <h2>Age of Empires IV</h2>
       <h3>Build Rankings</h3>
     </header>
 
     <section>
-      <nav>
+      <nav class="sidenav">
         <ul class="corner-button">
           <button><router-link to="/">Home</router-link></button>
           <button><router-link to="/create">Create Build</router-link></button>
@@ -22,6 +24,7 @@
 
       <article>
         <router-view />
+        <dropdwn-2></dropdwn-2>
       </article>
 
       <div class="sidebar">
@@ -33,7 +36,7 @@
       <div class="wrapper">
         <div class="icon AoESite">
           <div class="tooltip" v-html="AoESite">Age of Empires</div>
-          <span><i class="fab fa-fort-awesome"/></span>
+          <span><i class="fab fa-fort-awesome" /></span>
         </div>
         <div class="icon facebook">
           <div class="tooltip" v-html="Facebook">Facebook</div>
@@ -62,6 +65,7 @@
 
 <script>
 import dropdwn from '../src/components/Dropdown.vue'
+import dropdwn2 from '../src/components/Dropdown2.vue'
 export default {
   data () {
     return {
@@ -69,15 +73,18 @@ export default {
         '<a href="https://www.ageofempires.com/"target="_blank">Age of Empires</a>',
       Facebook:
         '<a href="https://www.facebook.com/ageofempires"target="_blank">Facebook</a>',
-      Twitter: '<a href="https://twitter.com/AgeOfEmpires/"target="_blank">Twitter</a>',
+      Twitter:
+        '<a href="https://twitter.com/AgeOfEmpires/"target="_blank">Twitter</a>',
       Instagram:
         '<a href="https://www.instagram.com/ageofempiresgame/"target="_blank">Instagram</a>',
-      Youtube: '<a href="https://www.youtube.com/user/officialageofempires"target="_blank">Youtube</a>',
+      Youtube:
+        '<a href="https://www.youtube.com/user/officialageofempires"target="_blank">Youtube</a>',
       GitHub: '<a href="https://github.com/PaulJD88"target="_blank">GitHub</a>'
     }
   },
   components: {
-    dropdwn
+    dropdwn,
+    dropdwn2
   }
 }
 </script>
@@ -105,7 +112,7 @@ header {
   color: white;
 }
 
-nav {
+nav.sidenav {
   float: left;
   width: 10%;
   padding: 20px;
@@ -126,9 +133,8 @@ nav ul {
 
 button {
   border-radius: 5px;
-  color: white;
   padding: 15px 25px;
-  font-size: 20px;
+  font-size: 16px;
   margin: 5px;
   font-family: "Oldenburg", cursive;
   border: none;
@@ -150,7 +156,9 @@ button:hover {
   background-color: #d7e1ec;
 }
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
 article {
   float: left;
@@ -220,7 +228,7 @@ footer {
 
 .wrapper .tooltip::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 8px;
   width: 8px;
   background-color: #ffffff;
@@ -287,7 +295,8 @@ footer {
 @media (max-width: 600px) {
   nav,
   article,
-  .sidebar {
+  .sidebar,
+  nav.sidenav {
     width: 100%;
     height: auto;
   }
