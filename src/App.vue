@@ -125,14 +125,32 @@ nav ul {
 }
 
 button {
-  background-color: #183540;
+  border-radius: 5px;
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding: 15px 25px;
+  font-size: 20px;
+  margin: 5px;
   font-family: "Oldenburg", cursive;
   border: none;
   cursor: pointer;
 }
+
+button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+button {
+  background-color: #183540;
+  box-shadow: 0px 5px 0px 0px #154f66;
+}
+
+button:hover {
+  background-color: #d7e1ec;
+}
+
+a {text-decoration: none;}
 
 article {
   float: left;

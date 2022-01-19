@@ -18,7 +18,7 @@
         <textarea id="order" v-model="buildOrder" required></textarea>
       </div>
       <button :class="[civName ? activeClass : '']" type="submit">Submit</button>
-      <button @click="addBuild">Get Beers</button>
+      <button @click="addBuild">Add Build</button>
     </form>
     </div>
 </template>

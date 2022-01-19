@@ -28,10 +28,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-button.dropbtn {
-  background-color: #183540;
+.dropbtn {
   color: white;
-  padding: 16px;
+  padding: 2px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -46,7 +45,7 @@ button.dropbtn {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 16px;
   font-family: 'Oldenburg', cursive;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
