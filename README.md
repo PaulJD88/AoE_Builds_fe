@@ -1,3 +1,17 @@
+Project list:
+
+# Button CSS changes
+- link improvements
+- general ui/ux improvements
+- include build buttons for url
+# Dropdown list CSS changes
+- general ui/ux improvements
+# API separation
+- api links to show relevant civ build
+# SQLite inclusion
+- link api to database
+
+
 # age_builds_fe
 
 ## Project setup
