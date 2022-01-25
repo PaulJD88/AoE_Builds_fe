@@ -63,7 +63,7 @@ export default {
 <style scoped lang="scss">
 
 form {
-  width: 50%;
+  width: 100%;
   font-size: 25px;
   padding: 15px;
 }
@@ -78,7 +78,7 @@ textarea {
 
 input {
   height: 30px;
-  width: 225px;
+  width: 100%;
   margin: 10px;
   font-family: 'Oldenburg', cursive;
 }

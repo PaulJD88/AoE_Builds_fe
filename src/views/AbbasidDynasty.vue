@@ -3,9 +3,9 @@
     <h1>The Abbasid Dynasty</h1>
     <div class="build">
       <div class="builds" v-for="build in showBuilds" :key="build.id">
-            <h1>{{ build.name }}</h1>
-            <h2>{{ build.subheading }}</h2>
-            <p>{{ build.url }}</p>
+            <h2>{{ build.name }}</h2>
+            <h3>{{ build.subheading }}</h3>
+            <p> {{ build.url }} </p>
       </div>
     </div>
   </div>

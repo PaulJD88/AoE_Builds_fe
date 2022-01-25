@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="maintemplate">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -7,31 +7,32 @@
       crossorigin="anonymous"
     />
     <header>
-      <h2>Age of Empires IV</h2>
-      <h3>Build Rankings</h3>
+      <div class="title">
+        <h2>Age of Empires IV</h2>
+      </div>
+      <div class="subheading">
+        <h3>Build Guides & Rankings</h3>
+      </div>
     </header>
 
-    <section>
-      <nav class="sidenav">
-        <ul class="corner-button">
-          <button><router-link to="/">Home</router-link></button>
-          <button><router-link to="/create">Create Build</router-link></button>
-          <button>
-            <dropdwn></dropdwn>
-          </button>
-        </ul>
-      </nav>
-
-      <article>
-        <router-view />
-        <dropdwn-2></dropdwn-2>
-      </article>
-
-      <div class="sidebar">
-        <h2>Top Builds</h2>
+    <div class="container">
+      <div class="navbar">
+        <div class="navcontent">
+          <ul class="corner-button">
+            <button><router-link to="/">Home</router-link></button>
+            <button>
+              <router-link to="/create">Create Build</router-link>
+            </button>
+            <button>
+              <dropdwn></dropdwn>
+            </button>
+          </ul>
+        </div>
       </div>
-    </section>
-
+      <div class="mainarticle">
+        <div class="maincontent"><router-view /></div>
+      </div>
+    </div>
     <footer>
       <div class="wrapper">
         <div class="icon AoESite">
@@ -65,7 +66,6 @@
 
 <script>
 import dropdwn from '../src/components/Dropdown.vue'
-import dropdwn2 from '../src/components/Dropdown2.vue'
 export default {
   data () {
     return {
@@ -83,111 +83,82 @@ export default {
     }
   },
   components: {
-    dropdwn,
-    dropdwn2
+    dropdwn
   }
 }
 </script>
 
-<style lang="scss">
+<style>
 @import url("https://fonts.googleapis.com/css2?family=Oldenburg&display=swap");
 
-* {
-  box-sizing: border-box;
-}
-
 body {
+  display: flexbox;
   font-family: "Oldenburg", cursive;
   padding: 0%;
   margin: 0%;
-  place-items: center;
-  background: linear-gradient(90deg, #2c5159, #d7e1ec);
+  background: #d7e1ec;
 }
 
 header {
+  display: flex;
   background-color: #183540;
+  padding: 25px;
+  text-align: match-parent;
+  justify-content: center;
+  font-size: 35px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  background-image: linear-gradient(#183540, #183540, #183540, #183540, #183540, #d7e1ec);
+  justify-content: flex-start;
+  font-size: 35px;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: #183540;
+  width: 250px;
+  text-align: center;
+  justify-content: center;
+}
+
+.navcontent {
+  display: flex;
+  background-color: #183540;
+  padding: 25px;
+  width: 150px;
+  text-align: left;
+  font-size: 35px;
+}
+
+.mainarticle {
+  display: flex;
+  width: auto;
   padding: 25px;
   text-align: center;
   font-size: 35px;
   color: white;
 }
 
-nav.sidenav {
-  float: left;
-  width: 10%;
-  padding: 20px;
-  height: 700px;
-}
-
-.sidebar {
-  float: right;
-  width: 10%;
-  padding: 20px;
-  height: 700px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-button {
-  border-radius: 5px;
-  padding: 15px 25px;
-  font-size: 16px;
-  margin: 5px;
-  font-family: "Oldenburg", cursive;
-  border: none;
-  cursor: pointer;
-}
-
-button:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
-}
-
-button {
-  background-color: #183540;
-  box-shadow: 0px 5px 0px 0px #154f66;
-}
-
-button:hover {
-  background-color: #d7e1ec;
-}
-
-a {
-  text-decoration: none;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 80%;
-  height: 700px;
-  background-color: #d9d9d9;
-  border: 20px black;
-}
-
-section::after {
-  content: "";
-  display: table;
-  clear: both;
+.maincontent {
+  display: flex;
+  padding: 25px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
 }
 
 footer {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  padding-bottom: 10px;
-  place-items: center;
-  background: linear-gradient(90deg, #2c5159, #d7e1ec);
-}
-
-*:focus,
-*:active {
-  outline: none !important;
-  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  background-color: #d7e1ec;
+  padding: 25px;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
 }
 
 .wrapper {
@@ -290,15 +261,5 @@ footer {
 .wrapper .youtube:hover .tooltip::before {
   background-color: #de463b;
   color: #ffffff;
-}
-
-@media (max-width: 600px) {
-  nav,
-  article,
-  .sidebar,
-  nav.sidenav {
-    width: 100%;
-    height: auto;
-  }
 }
 </style>
