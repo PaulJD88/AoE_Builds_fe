@@ -100,10 +100,10 @@ body {
 }
 
 header {
-  display: flex;
+  display: block;
   background-color: #183540;
   padding: 25px;
-  text-align: match-parent;
+  text-align: center;
   justify-content: center;
   font-size: 35px;
   color: white;
@@ -111,51 +111,42 @@ header {
 
 .container {
   display: flex;
-  text-align: center;
-  background-image: linear-gradient(#183540, #183540, #183540, #183540, #183540, #d7e1ec);
+  background-image: linear-gradient(#2C5159, #2C5159, #2C5159, #2C5159, #2C5159, #2C5159, #d7e1ec);
   justify-content: flex-start;
-  font-size: 35px;
+   font-size: 25px;
   color: white;
 }
 
 .navbar {
   display: flex;
-  background-color: #183540;
   width: 250px;
-  text-align: center;
   justify-content: center;
 }
 
 .navcontent {
   display: flex;
-  background-color: #183540;
   padding: 25px;
   width: 150px;
   text-align: left;
-  font-size: 35px;
 }
 
 .mainarticle {
   display: flex;
   width: auto;
   padding: 25px;
-  text-align: center;
-  font-size: 35px;
   color: white;
 }
 
 .maincontent {
   display: flex;
   padding: 25px;
-  text-align: center;
-  font-size: 35px;
   color: white;
 }
 
 footer {
   display: flex;
   background-color: #d7e1ec;
-  padding: 25px;
+  padding: 15px;
   justify-content: center;
   text-align: center;
   font-size: 35px;

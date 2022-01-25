@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <h1>The Rus</h1>
+  <div class="buildcontainer">
+    <h2>The Rus</h2>
     <div class="build">
       <div class="builds" v-for="build in showBuilds" :key="build.id">
-            <h1>{{ build.name }}</h1>
-            <h2>{{ build.subheading }}</h2>
-            <p>{{ build.url }}</p>
+        <h2>{{ build.name }}</h2>
+        <h3>{{ build.subheading }}</h3>
+        <p>{{ build.url }}</p>
       </div>
     </div>
   </div>
@@ -38,4 +38,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.buildcontainer {
+  display: block;
+  padding: 10px;
+}
+
+.builds {
+  display: block;
+  justify-content: left;
+  width: 600px;
+  height: auto;
+  margin: 5px;
+}
 </style>
