@@ -13,20 +13,31 @@
       <div class="subheading">
         <h3>Build Guides & Rankings</h3>
       </div>
+      <div class="button-bar">
+        <button>
+          <router-link to="/abbasid">The Abbasid Dynasty</router-link>
+        </button>
+        <button><router-link to="/chinese">The Chinese</router-link></button>
+        <button>
+          <router-link to="/delhi">The Delhi Sultanate</router-link>
+        </button>
+        <button><router-link to="/english">The English</router-link></button>
+        <button><router-link to="/french">The French</router-link></button>
+        <button>
+          <router-link to="/romans">The Holy Roman Empire</router-link>
+        </button>
+        <button><router-link to="/mongols">The Mongols</router-link></button>
+        <button><router-link to="/rus">The Rus</router-link></button>
+      </div>
     </header>
 
     <div class="container">
       <div class="navbar">
         <div class="navcontent">
-          <ul class="corner-button">
-            <button><router-link to="/">Home</router-link></button>
-            <button>
-              <router-link to="/create">Create Build</router-link>
-            </button>
-            <button>
-              <dropdwn></dropdwn>
-            </button>
-          </ul>
+          <button><router-link to="/">Home</router-link></button>
+          <button>
+            <router-link to="/create">Create Build</router-link>
+          </button>
         </div>
       </div>
       <div class="mainarticle">
@@ -65,7 +76,6 @@
 </template>
 
 <script>
-import dropdwn from '../src/components/Dropdown.vue'
 export default {
   data () {
     return {
@@ -82,9 +92,7 @@ export default {
       GitHub: '<a href="https://github.com/PaulJD88"target="_blank">GitHub</a>'
     }
   },
-  components: {
-    dropdwn
-  }
+  components: {}
 }
 </script>
 
@@ -111,9 +119,23 @@ header {
 
 .container {
   display: flex;
-  background-image: linear-gradient(#2C5159, #2C5159, #2C5159, #2C5159, #2C5159, #2C5159, #d7e1ec);
+  background-image: linear-gradient(
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #2c5159,
+    #d7e1ec
+  );
   justify-content: flex-start;
-   font-size: 25px;
+  font-size: 25px;
   color: white;
 }
 
@@ -127,6 +149,7 @@ header {
   display: flex;
   padding: 25px;
   width: 150px;
+  height: 50px;
   text-align: left;
 }
 

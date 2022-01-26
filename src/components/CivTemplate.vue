@@ -1,12 +1,12 @@
 <template>
   <div class="buildcontainer">
-    <h2>The Abbasid Dynasty</h2>
+    <h2>The English</h2>
     <div class="build">
       <div class="builds" v-for="build in showBuilds" :key="build.id">
-            <h2>{{ build.name }}</h2>
-            <p>{{ build.subheading }}</p>
-            <p> {{ build.url }} </p>
-            <button> Click Me </button>
+        <h2>{{ build.name }}</h2>
+        <p>{{ build.subheading }}</p>
+        <p>{{ build.url }}</p>
+        <button>Click Me</button>
       </div>
     </div>
   </div>
@@ -14,6 +14,10 @@
 
 <script>
 export default {
+  name: 'CivTemplate',
+  props: {
+    template: Object
+  },
   data () {
     return {
       showBuilds: []

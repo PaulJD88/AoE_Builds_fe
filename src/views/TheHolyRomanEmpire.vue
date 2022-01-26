@@ -4,8 +4,9 @@
     <div class="build">
       <div class="builds" v-for="build in showBuilds" :key="build.id">
             <h2>{{ build.name }}</h2>
-            <h3>{{ build.subheading }}</h3>
-            <p>{{ build.url }}</p>
+            <p>{{ build.subheading }}</p>
+            <p> {{ build.url }} </p>
+            <button> Click Me </button>
       </div>
     </div>
   </div>
@@ -44,10 +45,14 @@ export default {
 }
 
 .builds {
-  display: block;
-  justify-content: left;
+  display: inline-block;
+  background: #183540;
+  box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.253);
+  border-radius: 10px;
+  justify-content: center;
   width: 600px;
   height: auto;
-  margin: 5px;
+  margin: 20px 20px 20px 0;
+  padding: 10px;
 }
 </style>

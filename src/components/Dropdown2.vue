@@ -34,7 +34,7 @@ nav {
   margin: auto;
   margin-top: 40px;
   position: relative;
-  width: 50vw;
+  width: 50px;
   min-width: 320px;
   height: 200px;
 }
