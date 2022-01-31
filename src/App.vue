@@ -276,4 +276,22 @@ footer {
   background-color: #de463b;
   color: #ffffff;
 }
+
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  body {
+    width: 80%;
+    padding: 0;
+  }
+  footer {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  footer,
+  header {
+    width: 100%;
+  }
+}
 </style>
