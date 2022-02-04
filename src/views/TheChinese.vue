@@ -13,11 +13,15 @@
 </template>
 
 <script>
+// import civ from '../components/CivTile.vue'
 export default {
   data () {
     return {
       showBuilds: []
     }
+  },
+  components: {
+    // civ
   },
   methods: {
     getBuilds () {
@@ -40,17 +44,21 @@ export default {
 
 <style scoped lang="scss">
 .buildcontainer {
-  display: block;
+  display: inside-flex;
   padding: 10px;
 }
 
+.build {
+  display: inline-flex;
+}
+
 .builds {
-  display: inline-block;
+  display: inside-flex;
   background: #183540;
   box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.253);
-  border-radius: 10px;
+  border-radius: 5px;
   justify-content: center;
-  width: 600px;
+  width: auto;
   height: auto;
   margin: 20px 20px 20px 0;
   padding: 10px;

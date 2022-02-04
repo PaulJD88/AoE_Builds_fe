@@ -63,11 +63,11 @@
           <span><i class="fab fa-instagram"></i></span>
         </div>
         <div class="icon youtube">
-                    <router-link class="tooltip" to="/youtube">Youtube</router-link>
+          <router-link class="tooltip" to="/youtube">Youtube</router-link>
           <span><i class="fab fa-youtube"></i></span>
         </div>
         <div class="icon github">
-                    <router-link class="tooltip" to="/github">Github</router-link>
+          <router-link class="tooltip" to="/github">Github</router-link>
           <span><i class="fab fa-github"></i></span>
         </div>
       </div>
@@ -262,20 +262,20 @@ footer {
 
 @media only screen and (max-width: 800px) {
   /* For tablets: */
-  body {
-    width: 100%;
-    padding: 0;
-  }
+  header,
+  .container,
   footer {
     width: 100%;
+    padding: 0;
   }
 }
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
-  body,
   footer,
+  .container,
   header {
     width: 100%;
+    padding: 0;
   }
 }
 </style>
