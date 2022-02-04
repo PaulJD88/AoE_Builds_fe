@@ -16,27 +16,49 @@
       <div class="button-bar">
         <button>
           <router-link to="/abbasid">The Abbasid Dynasty</router-link>
+          <span><i class="fas fa-chess-rook"></i></span>
         </button>
-        <button><router-link to="/chinese">The Chinese</router-link></button>
         <button>
-          <router-link to="/delhi">The Delhi Sultanate</router-link>
+          <router-link to="/chinese">The Chinese</router-link
+          ><span><i class="fas fa-chess-rook"></i></span>
         </button>
-        <button><router-link to="/english">The English</router-link></button>
-        <button><router-link to="/french">The French</router-link></button>
         <button>
-          <router-link to="/romans">The Holy Roman Empire</router-link>
+          <router-link to="/delhi">The Delhi Sultanate</router-link
+          ><span><i class="fas fa-chess-rook"></i></span>
         </button>
-        <button><router-link to="/mongols">The Mongols</router-link></button>
-        <button><router-link to="/rus">The Rus</router-link></button>
+        <button>
+          <router-link to="/english">The English</router-link
+          ><span><i class="fas fa-chess-rook"></i></span>
+        </button>
+        <button>
+          <router-link to="/french">The French</router-link
+          ><span><i class="fas fa-chess-rook"></i></span>
+        </button>
+        <button>
+          <router-link to="/romans">The Holy Roman Empire</router-link
+          ><span><i class="fas fa-chess-rook"></i></span>
+        </button>
+        <button>
+          <router-link to="/mongols">The Mongols</router-link
+          ><span><i class="fas fa-chess-rook"></i></span>
+        </button>
+        <button>
+          <router-link to="/rus">The Rus</router-link
+          ><span><i class="fas fa-chess-rook"></i></span>
+        </button>
       </div>
     </header>
 
     <div class="container">
       <div class="navbar">
         <div class="navcontent">
-          <button><router-link to="/">Home</router-link></button>
+          <button>
+            <router-link to="/">Home</router-link>
+            <span><i class="fas fa-home"></i></span>
+          </button>
           <button>
             <router-link to="/create">Create Build</router-link>
+            <span><i class="fas fa-warehouse"></i></span>
           </button>
         </div>
       </div>
@@ -123,13 +145,13 @@ header {
 }
 
 .navbar {
-  display: flex;
+  display: inline-flex;
   width: 250px;
   justify-content: center;
 }
 
 .navcontent {
-  display: flex;
+  display: inline-flex;
   padding: 25px;
   width: 150px;
   height: 50px;
@@ -137,14 +159,14 @@ header {
 }
 
 .mainarticle {
-  display: flex;
+  display: inline-flex;
   width: auto;
   padding: 25px;
   color: white;
 }
 
 .maincontent {
-  display: flex;
+  display: inline-flex;
   padding: 25px;
   color: white;
 }

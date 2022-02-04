@@ -3,10 +3,9 @@
     <h2>The English</h2>
     <div class="build">
       <div class="builds" v-for="build in showBuilds" :key="build.id">
-            <h2>{{ build.name }}</h2>
-            <p>{{ build.subheading }}</p>
-            <p>{{ build.url }}</p>
-            <button>Click Me</button>
+        <h2>{{ build.name }}</h2>
+        <p>{{ build.subheading }}</p>
+        <button>{{ build.url }}</button>
       </div>
     </div>
   </div>
@@ -45,7 +44,7 @@ export default {
 }
 
 .build {
-  display: inline-flex;
+  display: inside-flex;
 }
 
 .builds {

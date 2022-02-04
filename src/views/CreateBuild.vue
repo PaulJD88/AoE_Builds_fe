@@ -17,10 +17,9 @@
         <label for="buildorder">Build order:</label><br />
         <textarea id="order" v-model="buildOrder" required></textarea>
       </div>
-      <button :class="[civName ? activeClass : '']" type="submit">
+      <button :class="[civName ? activeClass : '']" type="submit" @click="addBuild">
         Submit
       </button>
-      <button @click="addBuild">Add Build</button>
     </form>
   </div>
 </template>
@@ -65,24 +64,27 @@ export default {
 
 <style scoped lang="scss">
 form {
-  width: 100%;
+  display: inside-flex;
+  width: 500px;
   font-size: 25px;
   padding: 15px;
 }
 
 textarea {
-  margin: 10px;
-  width: 450px;
+  display: inside-flex;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  height: 500px;
+  height: 300px;
   font-family: "Oldenburg", cursive;
   color: grey;
 }
 
 input {
-  height: 30px;
-  width: 250px;
-  margin: 10px;
+  display: inside-flex;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+  height: 25px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   font-family: "Oldenburg", cursive;
 }
@@ -101,7 +103,7 @@ button {
   border-radius: 2px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
   transition: 0.25s all ease;
-  width: 50%;
+  width: 100%;
   cursor: pointer;
   &:hover {
     transform: translateY(2px);
@@ -113,10 +115,24 @@ button {
   opacity: 0px;
 }
 
-@media (max-width: 600px) {
-  form {
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  form,
+  textarea,
+  input,
+  button {
     width: 100%;
-    height: auto;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  form,
+  textarea,
+  input,
+  button {
+    width: 100%;
+    padding: 0;
   }
 }
 </style>
