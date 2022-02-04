@@ -47,27 +47,27 @@
     <footer>
       <div class="wrapper">
         <div class="icon AoESite">
-          <div class="tooltip" v-html="AoESite">Age of Empires</div>
+          <router-link class="tooltip" to="/aoe">Age of Empires</router-link>
           <span><i class="fab fa-fort-awesome" /></span>
         </div>
         <div class="icon facebook">
-          <div class="tooltip" v-html="Facebook">Facebook</div>
+          <router-link class="tooltip" to="/facebook">Facebook</router-link>
           <span><i class="fab fa-facebook-f"></i></span>
         </div>
         <div class="icon twitter">
-          <div class="tooltip" v-html="Twitter">Twitter</div>
+          <router-link class="tooltip" to="/twitter">Twitter</router-link>
           <span><i class="fab fa-twitter"></i></span>
         </div>
         <div class="icon instagram">
-          <div class="tooltip" v-html="Instagram">Instagram</div>
+          <router-link class="tooltip" to="/instagram">Instagram</router-link>
           <span><i class="fab fa-instagram"></i></span>
         </div>
         <div class="icon youtube">
-          <div class="tooltip" v-html="Youtube">Youtube</div>
+                    <router-link class="tooltip" to="/youtube">Youtube</router-link>
           <span><i class="fab fa-youtube"></i></span>
         </div>
         <div class="icon github">
-          <div class="tooltip" v-html="GitHub">My Github</div>
+                    <router-link class="tooltip" to="/github">Github</router-link>
           <span><i class="fab fa-github"></i></span>
         </div>
       </div>
@@ -76,24 +76,7 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      AoESite:
-        '<a href="https://www.ageofempires.com/"target="_blank">Age of Empires</a>',
-      Facebook:
-        '<a href="https://www.facebook.com/ageofempires"target="_blank">Facebook</a>',
-      Twitter:
-        '<a href="https://twitter.com/AgeOfEmpires/"target="_blank">Twitter</a>',
-      Instagram:
-        '<a href="https://www.instagram.com/ageofempiresgame/"target="_blank">Instagram</a>',
-      Youtube:
-        '<a href="https://www.youtube.com/user/officialageofempires"target="_blank">Youtube</a>',
-      GitHub: '<a href="https://github.com/PaulJD88"target="_blank">GitHub</a>'
-    }
-  },
-  components: {}
-}
+export default {}
 </script>
 
 <style>
@@ -169,7 +152,7 @@ header {
 footer {
   display: flex;
   background-color: #d7e1ec;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
   text-align: center;
   font-size: 35px;
@@ -200,10 +183,10 @@ footer {
 .wrapper .tooltip {
   position: absolute;
   top: 0;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #ffffff;
   color: #ffffff;
-  padding: 5px 8px;
+  padding: 10px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
@@ -224,7 +207,7 @@ footer {
 }
 
 .wrapper .icon:hover .tooltip {
-  top: -45px;
+  top: -35px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -280,7 +263,7 @@ footer {
 @media only screen and (max-width: 800px) {
   /* For tablets: */
   body {
-    width: 80%;
+    width: 100%;
     padding: 0;
   }
   footer {
@@ -289,6 +272,7 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
+  body,
   footer,
   header {
     width: 100%;

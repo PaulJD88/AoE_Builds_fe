@@ -81,6 +81,42 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/TheRus.vue')
+  },
+  {
+    path: '/aoe',
+    beforeEnter (to, from, next) {
+      window.location.href = 'https://www.ageofempires.com/'
+    }
+  },
+  {
+    path: '/facebook',
+    beforeEnter (to, from, next) {
+      window.location.href = 'https://www.facebook.com/ageofempires'
+    }
+  },
+  {
+    path: '/twitter',
+    beforeEnter (to, from, next) {
+      window.location.href = 'https://twitter.com/AgeOfEmpires/'
+    }
+  },
+  {
+    path: '/instagram',
+    beforeEnter (to, from, next) {
+      window.location.href = 'https://www.instagram.com/ageofempiresgame/'
+    }
+  },
+  {
+    path: '/youtube',
+    beforeEnter (to, from, next) {
+      window.location.href = 'https://www.youtube.com/user/officialageofempires'
+    }
+  },
+  {
+    path: '/github',
+    beforeEnter (to, from, next) {
+      window.location.href = 'https://github.com/PaulJD88'
+    }
   }
 ]
 
