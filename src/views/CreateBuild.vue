@@ -17,7 +17,11 @@
         <label for="buildorder">Build order:</label><br />
         <textarea id="order" v-model="buildOrder" required></textarea>
       </div>
-      <button :class="[civName ? activeClass : '']" type="submit" @click="addBuild">
+      <button
+        :class="[civName ? activeClass : '']"
+        type="submit"
+        @click="addBuild"
+      >
         Submit
       </button>
     </form>
