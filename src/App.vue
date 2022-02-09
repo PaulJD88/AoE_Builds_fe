@@ -53,12 +53,14 @@
       <div class="navbar">
         <div class="navcontent">
           <button>
-            <router-link to="/">Home</router-link>
-            <span><i class="fas fa-home"></i></span>
+            <router-link to="/"
+              ><span><i class="fas fa-home"></i></span
+            ></router-link>
           </button>
           <button>
-            <router-link to="/create">Create Build</router-link>
-            <span><i class="fas fa-warehouse"></i></span>
+            <router-link to="/create"
+              >Creator<span><i class="fas fa-warehouse"></i></span
+            ></router-link>
           </button>
         </div>
       </div>
@@ -190,8 +192,8 @@ footer {
   border-radius: 50%;
   padding: 15px;
   margin: 10px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -280,6 +282,32 @@ footer {
 .wrapper .youtube:hover .tooltip::before {
   background-color: #de463b;
   color: #ffffff;
+}
+
+button {
+  box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+  background-color: #ffc477;
+  border-radius: 6px;
+  border: 1px solid #eeb44f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  margin: 2px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #cc9f52;
+}
+button:hover {
+  background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+  background-color: #fb9e25;
+}
+button:active {
+  position: relative;
+  top: 1px;
 }
 
 @media only screen and (max-width: 800px) {
