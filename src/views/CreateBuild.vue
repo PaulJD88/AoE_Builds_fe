@@ -49,7 +49,7 @@ export default {
           name: this.civName,
           subheading: this.buildName,
           url: this.buildUrl,
-          order: this.buildOrder
+          build: this.buildOrder
         }),
         headers: {
           'Content-type': 'application/json; charset=UTF-8'

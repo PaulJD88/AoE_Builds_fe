@@ -2,10 +2,11 @@
   <div class="buildcontainer">
     <h2>The Chinese</h2>
     <div class="build">
-      <div class="builds" v-for="build in showBuilds" :key="build.id">
-        <h2>{{ build.name }}</h2>
-        <p>{{ build.subheading }}</p>
-        <button>{{ build.url }}</button>
+      <div class="builds" v-for="builder in showBuilds" :key="builder.id">
+        <h2>{{ builder.name }}</h2>
+        <p>{{ builder.subheading }}</p>
+        <p>{{ builder.build }}</p>
+        <button>{{ builder.url }}</button>
       </div>
     </div>
   </div>
