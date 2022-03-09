@@ -3,20 +3,22 @@
     <h2>The English</h2>
     <div class="build">
       <div class="builds" v-for="build in showBuilds" :key="build.id">
-        <h2>{{ build.civilisation_name }}</h2>
-        <p>{{ build.build_name }}</p>
-        <button>{{ build.url }}</button>
+        <CivTile :build="build"></CivTile>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import CivTile from '../components/CivTile.vue'
 export default {
   data () {
     return {
       showBuilds: []
     }
+  },
+  components: {
+    CivTile
   },
   methods: {
     getBuilds () {
