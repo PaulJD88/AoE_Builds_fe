@@ -46,10 +46,10 @@ export default {
       fetch('http://localhost:3000/builds', {
         method: 'POST',
         body: JSON.stringify({
-          name: this.civName,
-          subheading: this.buildName,
-          url: this.buildUrl,
-          build: this.buildOrder
+          civilisation_name: this.civName,
+          build_name: this.buildName,
+          build_order: this.buildOrder,
+          url: this.buildUrl
         }),
         headers: {
           'Content-type': 'application/json; charset=UTF-8'
