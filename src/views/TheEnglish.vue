@@ -23,7 +23,7 @@ export default {
   methods: {
     getBuilds () {
       console.log('Getting Builds!')
-      fetch('http://localhost:3000/builds', {
+      fetch('http://localhost:3000/builds/english', {
         method: 'GET'
       })
         .then((response) => response.json())
