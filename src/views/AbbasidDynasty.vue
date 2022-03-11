@@ -1,27 +1,27 @@
 <template>
   <div class="buildcontainer">
-    <h2>The Abbasid Dynasty</h2>
-    <div class="build">
-      <div class="builds" v-for="build in showBuilds" :key="build.id">
-        <h2>{{ build.civilisation_name }}</h2>
-        <p>{{ build.build_name }}</p>
-        <button>{{ build.url }}</button>
-      </div>
+    <h2>The Abbassid Dynasty</h2>
+    <div class="build" v-for="build in showBuilds" :key="build.id">
+      <CivTile :build="build"></CivTile>
     </div>
   </div>
 </template>
 
 <script>
+import CivTile from '../components/CivTile.vue'
 export default {
   data () {
     return {
       showBuilds: []
     }
   },
+  components: {
+    CivTile
+  },
   methods: {
     getBuilds () {
       console.log('Getting Builds!')
-      fetch('http://localhost:3000/builds', {
+      fetch('http://localhost:3000/builds/abbassid', {
         method: 'GET'
       })
         .then((response) => response.json())
@@ -37,25 +37,5 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.buildcontainer {
-  display: inside-flex;
-  padding: 10px;
-}
-
-.build {
-  display: inside-flex;
-}
-
-.builds {
-  display: inside-flex;
-  background: #183540;
-  box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.253);
-  border-radius: 5px;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  margin: 20px 20px 20px 0;
-  padding: 10px;
-}
+<style>
 </style>

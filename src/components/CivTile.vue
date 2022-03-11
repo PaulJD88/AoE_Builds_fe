@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 .buildcontainer {
   display: inside-flex;
   padding: 10px;
@@ -31,7 +31,7 @@ export default {
 .build {
   display: inside-flex;
   flex-direction: column;
-  background: #183540;
+  background: #575F61;
   box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.253);
   border-radius: 5px;
   justify-content: center;

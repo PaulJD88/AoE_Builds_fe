@@ -37,13 +37,12 @@ button.dropbtn {
 }
 
 .dropdown {
-  position: relative;
+  position: end;
   display: inline-block;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
   background-color: #f9f9f9;
   min-width: 16px;
   font-family: 'Oldenburg', cursive;

@@ -13,7 +13,11 @@
       <div class="subheading">
         <h3>Build Guides & Rankings</h3>
       </div>
-      <div class="button-bar">
+      <div class="dropdownlist">
+        <menubar></menubar>
+        <dropdwn></dropdwn>
+      </div>
+      <!-- <div class="button-bar">
         <button>
           <router-link to="/abbasid">The Abbasid Dynasty</router-link>
           <span><i class="fas fa-chess-rook"></i></span>
@@ -46,7 +50,7 @@
           <router-link to="/rus">The Rus</router-link
           ><span><i class="fas fa-chess-rook"></i></span>
         </button>
-      </div>
+      </div> -->
     </header>
 
     <div class="container">
@@ -100,7 +104,15 @@
 </template>
 
 <script>
-export default {}
+import menubar from '../src/components/MenuBar.vue'
+import dropdwn from '../src/components/Dropdown.vue'
+
+export default {
+  components: {
+    dropdwn,
+    menubar
+  }
+}
 </script>
 
 <style>
@@ -111,12 +123,12 @@ body {
   font-family: "Oldenburg", cursive;
   padding: 0%;
   margin: 0%;
-  background: #d7e1ec;
+  background: #052440;
 }
 
 header {
   display: block;
-  background-color: #183540;
+  background-color: #052440;
   padding: 25px;
   text-align: center;
   justify-content: center;
@@ -126,21 +138,7 @@ header {
 
 .container {
   display: flex;
-  background-image: linear-gradient(
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #2c5159,
-    #d7e1ec
-  );
+  background: #052440;
   justify-content: flex-start;
   font-size: 25px;
   color: white;
@@ -175,7 +173,7 @@ header {
 
 footer {
   display: flex;
-  background-color: #d7e1ec;
+  background-color: #c0c9d0;
   padding: 10px;
   justify-content: center;
   text-align: center;
