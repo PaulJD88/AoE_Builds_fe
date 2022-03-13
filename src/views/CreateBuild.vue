@@ -2,7 +2,7 @@
   <div class="form">
     <form @submit.prevent="submitForm">
       <div>
-        <label for="civname">Civilisation name:</label><br />
+        <label for="civname">Civilisation:</label><br />
         <select id="name" type="text" v-model="civName" required>
           <option value="abbassid">The Abbassid Dynasty</option>
           <option value="chinese">The Chinese</option>
@@ -15,7 +15,7 @@
         </select>
       </div>
       <div>
-        <label for="buildname">Build name:</label><br />
+        <label for="buildname">Build Name:</label><br />
         <input id="build" type="text" v-model="buildName" required />
       </div>
       <div>
@@ -23,7 +23,7 @@
         <input id="url" v-model="buildUrl" required />
       </div>
       <div>
-        <label for="buildorder">Build order:</label><br />
+        <label for="buildorder">Build Description:</label><br />
         <textarea id="order" v-model="buildOrder" required></textarea>
       </div>
       <button
@@ -44,8 +44,7 @@ export default {
       civName: '',
       buildName: '',
       buildUrl: '',
-      buildOrder:
-        'EXAMPLE: \n- Queue up 6 villagers \n- All initial Villagers to the starting sheep \n- Send your scout out (micro it to gather Sheep and find the enemy Town Center) \n- 1 Villager on Gold \n- 1 Villager on House, then Gold \n- Queue up 2 more villagers and send them to Wood \n- 8 Villagers on Sheep \n- 1 Villager on Lumbercamp, then Wood \n- 1 Villager on Wood \n- At 100 gold, send your mining villagers to walk towards to center of the map \n- Build a landmark with the villagers that were mining \n- Queue up 1 more villager, send them to Wood \n- Queue up 1 more villager, send them to Sheep \n- Send 2 Villagers that were on Sheep to the Landmark \n- Send 1 Villager that was on Wood to the Landmark \n- Once the Landmark is ready, send those 4 Villagers to make a Mill at a nearby Food (Deer if possible) \n- Queue 2 Longbowmen and send them to the enemy base (harass their mines, mills, and Lumbercamps) \n- Keep training Longbowmen and harassing the enemy while improving your economy',
+      buildOrder: '',
       response: '',
       activeClass: 'active'
     }
@@ -93,7 +92,8 @@ textarea {
   color: grey;
 }
 
-input, select {
+input,
+select {
   display: inside-flex;
   margin: 10px 0px 10px 0px;
   width: 100%;
