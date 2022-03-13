@@ -1,7 +1,6 @@
 <template>
   <div class="buildcontainer">
     <div class="build">
-      <h2>{{ build.civilisation_name }}</h2>
       <p>{{ build.build_name }}</p>
       <p>{{ build.build_order }}</p>
       <button>{{ build.url }}</button>
