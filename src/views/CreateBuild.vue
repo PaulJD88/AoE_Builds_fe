@@ -3,7 +3,16 @@
     <form @submit.prevent="submitForm">
       <div>
         <label for="civname">Civilisation name:</label><br />
-        <input id="name" type="text" v-model="civName" required />
+        <select id="name" type="text" v-model="civName" required>
+          <option value="abbassid">The Abbassid Dynasty</option>
+          <option value="chinese">The Chinese</option>
+          <option value="delhi">The Delhi Sultanate</option>
+          <option value="english">The English</option>
+          <option value="french">The French</option>
+          <option value="roman">The Holy Roman Empire</option>
+          <option value="mongols">The Mongols</option>
+          <option value="rus">The Rus</option>
+        </select>
       </div>
       <div>
         <label for="buildname">Build name:</label><br />
@@ -84,7 +93,7 @@ textarea {
   color: grey;
 }
 
-input {
+input, select {
   display: inside-flex;
   margin: 10px 0px 10px 0px;
   width: 100%;

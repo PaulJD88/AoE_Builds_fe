@@ -1,15 +1,15 @@
 <template>
   <div class="dropdown">
-    <button class="dropbtn">Civilisations</button>
+    <a class="dropbtn">Civilisations</a>
     <div class="dropdown-content">
-      <li><router-link to="/abbasid">The Abbasid Dynasty</router-link></li>
-      <li><router-link to="/chinese">The Chinese</router-link></li>
-      <li><router-link to="/delhi">The Delhi Sultanate</router-link></li>
-      <li><router-link to="/english">The English</router-link></li>
-      <li><router-link to="/french">The French</router-link></li>
-      <li><router-link to="/romans">The Holy Roman Empire</router-link></li>
-      <li><router-link to="/mongols">The Mongols</router-link></li>
-      <li><router-link to="/rus">The Rus</router-link></li>
+      <router-link to="/abbasid">The Abbasid Dynasty</router-link>
+      <router-link to="/chinese">The Chinese</router-link>
+      <router-link to="/delhi">The Delhi Sultanate</router-link>
+      <router-link to="/english">The English</router-link>
+      <router-link to="/french">The French</router-link>
+      <router-link to="/romans">The Holy Roman Empire</router-link>
+      <router-link to="/mongols">The Mongols</router-link>
+      <router-link to="/rus">The Rus</router-link>
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-button.dropbtn {
+a.dropbtn {
   color: white;
   padding: 15px, 25px;
   font-size: 16px;

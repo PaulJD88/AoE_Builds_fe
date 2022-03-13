@@ -1,9 +1,10 @@
 <template>
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <router-link to="/"
+      ><span><i class="fas fa-home"></i></span
+    ></router-link>
+    <a><dropdwn></dropdwn></a>
+    <router-link to="/create">Creator</router-link>
     <a href="javascript:void(0);" class="icon" @click="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import dropdwn from '../components/Dropdown.vue'
 export default {
   name: 'MenuBar',
   props: {
@@ -18,6 +20,9 @@ export default {
   },
   data () {
     return {}
+  },
+  components: {
+    dropdwn
   },
   methods: {
     myFunction () {

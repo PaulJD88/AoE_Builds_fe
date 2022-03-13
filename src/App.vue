@@ -6,6 +6,7 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <menubar></menubar>
     <header>
       <div class="title">
         <h2>Age of Empires IV</h2>
@@ -13,61 +14,8 @@
       <div class="subheading">
         <h3>Build Guides & Rankings</h3>
       </div>
-      <div class="dropdownlist">
-        <menubar></menubar>
-        <dropdwn></dropdwn>
-      </div>
-      <!-- <div class="button-bar">
-        <button>
-          <router-link to="/abbasid">The Abbasid Dynasty</router-link>
-          <span><i class="fas fa-chess-rook"></i></span>
-        </button>
-        <button>
-          <router-link to="/chinese">The Chinese</router-link
-          ><span><i class="fas fa-chess-rook"></i></span>
-        </button>
-        <button>
-          <router-link to="/delhi">The Delhi Sultanate</router-link
-          ><span><i class="fas fa-chess-rook"></i></span>
-        </button>
-        <button>
-          <router-link to="/english">The English</router-link
-          ><span><i class="fas fa-chess-rook"></i></span>
-        </button>
-        <button>
-          <router-link to="/french">The French</router-link
-          ><span><i class="fas fa-chess-rook"></i></span>
-        </button>
-        <button>
-          <router-link to="/romans">The Holy Roman Empire</router-link
-          ><span><i class="fas fa-chess-rook"></i></span>
-        </button>
-        <button>
-          <router-link to="/mongols">The Mongols</router-link
-          ><span><i class="fas fa-chess-rook"></i></span>
-        </button>
-        <button>
-          <router-link to="/rus">The Rus</router-link
-          ><span><i class="fas fa-chess-rook"></i></span>
-        </button>
-      </div> -->
     </header>
-
     <div class="container">
-      <div class="navbar">
-        <div class="navcontent">
-          <button>
-            <router-link to="/"
-              ><span><i class="fas fa-home"></i></span
-            ></router-link>
-          </button>
-          <button>
-            <router-link to="/create"
-              >Creator<span><i class="fas fa-warehouse"></i></span
-            ></router-link>
-          </button>
-        </div>
-      </div>
       <div class="mainarticle">
         <div class="maincontent"><router-view /></div>
       </div>
@@ -105,11 +53,9 @@
 
 <script>
 import menubar from '../src/components/MenuBar.vue'
-import dropdwn from '../src/components/Dropdown.vue'
 
 export default {
   components: {
-    dropdwn,
     menubar
   }
 }
@@ -280,32 +226,6 @@ footer {
 .wrapper .youtube:hover .tooltip::before {
   background-color: #de463b;
   color: #ffffff;
-}
-
-button {
-  box-shadow: inset 0px 1px 0px 0px #fce2c1;
-  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
-  background-color: #ffc477;
-  border-radius: 6px;
-  border: 1px solid #eeb44f;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 6px 24px;
-  margin: 2px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #cc9f52;
-}
-button:hover {
-  background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
-  background-color: #fb9e25;
-}
-button:active {
-  position: relative;
-  top: 1px;
 }
 
 @media only screen and (max-width: 800px) {
