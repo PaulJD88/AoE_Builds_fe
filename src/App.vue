@@ -85,7 +85,7 @@ header {
 .container {
   display: flex;
   background: #052440;
-  justify-content: flex-start;
+  justify-content: flex-center;
   font-size: 25px;
   color: white;
 }

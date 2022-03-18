@@ -28,14 +28,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-a.dropbtn {
-  color: white;
-  padding: 15px, 25px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
 .dropdown {
   position: end;
   display: inline-block;
@@ -43,10 +35,8 @@ a.dropbtn {
 
 .dropdown-content {
   display: none;
-  background-color: #f9f9f9;
-  min-width: 16px;
-  font-family: 'Oldenburg', cursive;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-family: "Oldenburg", cursive;
+  font-size: 17px;
   z-index: 1;
 }
 
@@ -66,7 +56,6 @@ a.dropbtn {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #183540;
+  display: none;
 }
-
 </style>
