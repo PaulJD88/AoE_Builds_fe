@@ -5,7 +5,7 @@
     ></router-link>
     <a><dropdwn></dropdwn></a>
     <router-link to="/create">Creator</router-link>
-    <a href="javascript:void(0);" class="icon" @click="myFunction()">
+    <a href="javascript:void(0);" class="icon" @click="burgerMenu()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -25,12 +25,12 @@ export default {
     dropdwn
   },
   methods: {
-    myFunction () {
-      var x = document.getElementById('myTopnav')
-      if (x.className === 'topnav') {
-        x.className += ' responsive'
+    burgerMenu () {
+      var topNav = document.getElementById('myTopnav')
+      if (topNav.className === 'topnav') {
+        topNav.className += ' responsive'
       } else {
-        x.className = 'topnav'
+        topNav.className = 'topnav'
       }
     }
   }

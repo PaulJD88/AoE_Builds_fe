@@ -1,9 +1,9 @@
 <template>
   <div class="buildcontainer">
     <div class="buildtile">
-      <p>{{ build.build_name }}</p>
+      <h3>{{ build.build_name }}</h3>
       <p>{{ build.build_order }}</p>
-      <button>{{ build.url }}</button>
+      <a>{{ build.url }}</a>
     </div>
   </div>
 </template>
@@ -25,12 +25,11 @@ export default {
 .buildcontainer {
   display: flex;
   justify-content: center;
-  width: 100%;
   padding: 10px;
 }
 
 .buildtile {
-  display: flex-center;
+  display: flex;
   flex-direction: column;
   background: #333;
   box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.253);
@@ -41,7 +40,8 @@ export default {
   padding: 10px;
 }
 
-p {
+p,
+a {
   font-size: 15px;
 }
 </style>

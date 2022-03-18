@@ -42,13 +42,14 @@ export default {
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 10px 5px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #052440;
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {

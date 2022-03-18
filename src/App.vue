@@ -11,14 +11,12 @@
       <div class="title">
         <h2>Age of Empires IV</h2>
       </div>
-      <div class="subheading">
-        <h3>Build Guides & Rankings</h3>
-      </div>
     </header>
-    <div class="container">
-      <div class="mainarticle">
-        <div class="maincontent"><router-view /></div>
-      </div>
+    <div class="subheading">
+      <h3>Build Guides & Rankings</h3>
+    </div>
+    <div class="mainarticle">
+      <div class="maincontent"><router-view /></div>
     </div>
     <footer>
       <div class="wrapper">
@@ -67,59 +65,42 @@ export default {
 body {
   display: flexbox;
   font-family: "Oldenburg", cursive;
+  width: auto;
   padding: 0%;
   margin: 0%;
   background: #052440;
 }
 
 header {
-  display: block;
-  background-color: #052440;
-  padding: 25px;
+  display: flex;
+  background-color: #4D6173;
+  padding: 15px;
   text-align: center;
   justify-content: center;
   font-size: 35px;
   color: white;
 }
 
-.container {
+.subheading {
   display: flex;
-  background: #052440;
-  justify-content: flex-center;
-  font-size: 25px;
-  color: white;
-}
-
-.navbar {
-  display: inline-flex;
-  width: 250px;
+  background-color: #C0C9D0;
+  padding: 15px;
+  text-align: center;
   justify-content: center;
-}
-
-.navcontent {
-  display: inline-flex;
-  padding: 25px;
-  width: 150px;
-  height: 50px;
-  text-align: left;
-}
-
-.mainarticle {
-  display: inline-flex;
-  width: auto;
-  padding: 25px;
-  color: white;
+  font-size: 35px;
+  color: black;
 }
 
 .maincontent {
-  display: inline-flex;
+  background-color: #052440;
+  display: flex;
   padding: 25px;
   color: white;
 }
 
 footer {
   display: flex;
-  background-color: #c0c9d0;
+  background-color: #333;
   padding: 10px;
   justify-content: center;
   text-align: center;
@@ -231,17 +212,19 @@ footer {
 @media only screen and (max-width: 800px) {
   /* For tablets: */
   header,
+  .subheading,
   .container,
   footer {
     width: 100%;
     padding: 0;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   /* For mobile phones: */
-  footer,
+  header,
+  .subheading,
   .container,
-  header {
+  footer {
     width: 100%;
     padding: 0;
   }

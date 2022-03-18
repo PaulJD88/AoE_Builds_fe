@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <div>
       <h2>Welcome</h2>
       <p>
@@ -21,4 +21,7 @@
 
 export default {}
 </script>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.home {
+  height: 450px;
+}</style>

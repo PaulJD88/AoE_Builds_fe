@@ -76,6 +76,7 @@ export default {
 
 <style scoped lang="scss">
 form {
+  background-color: #333;
   display: inside-flex;
   width: 500px;
   font-size: 25px;
