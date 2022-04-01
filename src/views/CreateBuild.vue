@@ -1,5 +1,6 @@
 <template>
   <div class="form">
+          <h1> Build Creator </h1>
     <form @submit.prevent="submitForm">
       <div>
         <label for="civname">Civilisation:</label><br />
@@ -47,7 +48,7 @@ export default {
       buildOrder: '',
       response: '',
       activeClass: 'active',
-      name: 'Thank you!'
+      name: 'Thank you'
     }
   },
   methods: {
@@ -70,7 +71,13 @@ export default {
         .catch((error) => {
           console.log(error)
         })
-      alert('Submitted Successfully ' + this.name + '!')
+        .then(alert('Submitted successfully. ' + this.name + '!'))
+        .then(
+          (this.civName = ''),
+          (this.buildName = ''),
+          (this.buildOrder = ''),
+          (this.buildUrl = '')
+        )
     }
   }
 }
@@ -82,6 +89,7 @@ form {
   display: inside-flex;
   width: 500px;
   font-size: 25px;
+  margin: 50px;
   padding: 15px;
   font-family: "Oldenburg", cursive;
   font-family: "Open Sans", sans-serif;
@@ -132,6 +140,7 @@ button {
 
 .active {
   background: #0a2126;
+  color: white;
   opacity: 0px;
 }
 

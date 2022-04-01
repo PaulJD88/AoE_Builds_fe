@@ -1,6 +1,6 @@
 <template>
   <div class="buildcontainer">
-    <h2>The English</h2>
+    <h1>The English</h1>
     <div class="build" v-for="build in showBuilds" :key="build.id">
       <CivTile :build="build"></CivTile>
     </div>
