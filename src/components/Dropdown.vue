@@ -36,6 +36,7 @@ export default {
 .dropdown-content {
   display: none;
   font-family: "Oldenburg", cursive;
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   z-index: 1;
 }

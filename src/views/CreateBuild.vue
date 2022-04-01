@@ -46,7 +46,8 @@ export default {
       buildUrl: '',
       buildOrder: '',
       response: '',
-      activeClass: 'active'
+      activeClass: 'active',
+      name: 'Thank you!'
     }
   },
   methods: {
@@ -69,6 +70,7 @@ export default {
         .catch((error) => {
           console.log(error)
         })
+      alert('Submitted Successfully ' + this.name + '!')
     }
   }
 }
@@ -81,6 +83,8 @@ form {
   width: 500px;
   font-size: 25px;
   padding: 15px;
+  font-family: "Oldenburg", cursive;
+  font-family: "Open Sans", sans-serif;
 }
 
 textarea {
@@ -88,19 +92,19 @@ textarea {
   margin: 10px 0px 10px 0px;
   width: 100%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  height: 300px;
-  font-family: "Oldenburg", cursive;
-  color: grey;
+  height: 200px;
+  font-size: 20px;
+  color: black;
 }
 
 input,
 select {
   display: inside-flex;
   margin: 10px 0px 10px 0px;
-  width: 100%;
+  width: 50%;
   height: 25px;
+  font-size: 18px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  font-family: "Oldenburg", cursive;
 }
 
 .icon {
@@ -108,12 +112,14 @@ select {
 }
 
 button {
-  color: white;
+  color: black;
   padding: 16px;
-  font-weight: 600;
   text-transform: uppercase;
-  background: grey;
+  font-size: 25px;
+  background: #c0c9d0;
   border: none;
+  font-family: "Oldenburg", cursive;
+  font-family: "Open Sans", sans-serif;
   border-radius: 2px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
   transition: 0.25s all ease;

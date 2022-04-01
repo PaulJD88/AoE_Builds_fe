@@ -54,7 +54,7 @@ export default {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #c0c9d0;
   color: black;
 }
 

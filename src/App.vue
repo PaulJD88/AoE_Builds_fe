@@ -10,11 +10,9 @@
     <header>
       <div class="title">
         <h2>Age of Empires IV</h2>
+        <h3>Build Guides & Rankings</h3>
       </div>
     </header>
-    <div class="subheading">
-      <h3>Build Guides & Rankings</h3>
-    </div>
     <div class="mainarticle">
       <div class="maincontent"><router-view /></div>
     </div>
@@ -60,31 +58,21 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Oldenburg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oldenburg&family=Open+Sans&display=swap");
 
 body {
   display: flexbox;
   font-family: "Oldenburg", cursive;
+  font-family: "Open Sans", sans-serif;
   width: auto;
   padding: 0%;
   margin: 0%;
-  background: #052440;
+  background: #c0c9d0;
 }
 
 header {
   display: flex;
-  background-color: #4D6173;
-  padding: 15px;
-  text-align: center;
-  justify-content: center;
-  font-size: 35px;
-  color: white;
-}
-
-.subheading {
-  display: flex;
-  background-color: #C0C9D0;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
   justify-content: center;
   font-size: 35px;
@@ -100,7 +88,7 @@ header {
 
 footer {
   display: flex;
-  background-color: #333;
+  background-color: #c0c9d0;
   padding: 10px;
   justify-content: center;
   text-align: center;
@@ -212,7 +200,6 @@ footer {
 @media only screen and (max-width: 800px) {
   /* For tablets: */
   header,
-  .subheading,
   .container,
   footer {
     width: 100%;
@@ -222,7 +209,6 @@ footer {
 @media only screen and (max-width: 400px) {
   /* For mobile phones: */
   header,
-  .subheading,
   .container,
   footer {
     width: 100%;
