@@ -2,12 +2,10 @@
   <div class="buildcontainer">
     <div class="buildtile">
       <h3>{{ build.build_name }}</h3>
-      <div><VueStar></VueStar></div>
-      <div class="hoverme">Hover over me</div>
-      <div class="hide">
-        <div class="insidetext">{{ build.build_order }}</div>
-        <div class="link">{{ build.url }}</div>
-      </div>
+      <div class="image"><img src=https://picsum.photos/360/180><img /></div>
+      <div class="rating"><VueStar></VueStar></div>
+      <div class="insidetext">{{ build.build_order }}</div>
+      <div class="link">{{ build.url }}</div>
     </div>
   </div>
 </template>
@@ -31,41 +29,39 @@ export default {
 
 <style scoped lang="scss">
 .buildcontainer {
+  border: dashed green;
   display: flex;
 }
 
-.buildtile,
-.buildinfo {
+.buildtile {
   display: flex;
-  flex-direction: column;
   background: #333;
+  border: dashed blue;
   box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.253);
   border-radius: 5px;
-  width: auto;
-  height: auto;
   margin: 20px 0px 20px 0;
   padding: 10px;
 }
 
+h3 {
+  border:dashed yellow;
+}
+
+.image {
+  border: dashed purple;
+  float: left;
+}
+
+.rating {
+  border: dashed brown;
+}
 .insidetext {
-  width: 50%;
+  border: dashed black;
+  float: right;
+  font-size: 10px;
 }
 
 .link {
-  width: 20%;
-}
-
-.hide {
-  display: none;
-}
-
-.hoverme:hover + .hide {
-  display: flex;
-  color: white;
-}
-
-.hoverme {
-  padding: 2px;
-  cursor: pointer;
+ border: dashed white;
 }
 </style>

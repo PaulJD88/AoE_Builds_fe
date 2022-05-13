@@ -86,8 +86,10 @@ export default {
 <style scoped lang="scss">
 form {
   background-color: #333;
+  color: #c0c9d0;
   display: inside-flex;
   width: 500px;
+  border-radius: 5px;
   font-size: 25px;
   margin: 50px;
   padding: 15px;

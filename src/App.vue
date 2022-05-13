@@ -67,7 +67,7 @@ body {
   width: auto;
   padding: 0%;
   margin: 0%;
-  background: #052440;
+  background: #c0c9d0;
 }
 
 header {
@@ -81,16 +81,15 @@ header {
 }
 
 .maincontent {
-  background: #052440;
-  display: flex;
+  background: #c0c9d0;
+  display: inline-flex;
   padding: 25px;
-  color: white;
+  /* color: white; */
 }
 
 footer {
   display: flex;
-  border-top: solid #c0c9d0;
-  background: #052440;
+  background: #c0c9d0;
   padding: 10px;
   justify-content: center;
   text-align: center;
