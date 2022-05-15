@@ -44,9 +44,10 @@ export default {
 <style>
 footer {
   display: flex;
-  background: #c0c9d0;
+  background-color: #333;
   padding: 10px;
-  justify-content: right;
+  padding-bottom: 20px;
+  justify-content: center;
   text-align: center;
   font-size: 35px;
 }

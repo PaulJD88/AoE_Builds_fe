@@ -37,7 +37,11 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.image {
-  border: dashed purple;
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  display: flex;
+  padding: 10px;
 }
 </style>

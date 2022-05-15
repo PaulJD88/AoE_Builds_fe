@@ -1,5 +1,5 @@
 <template>
-  <div class="maintemplate">
+  <div class="maincontent">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -14,7 +14,7 @@
       </div>
     </header>
     <div class="mainarticle">
-      <div class="maincontent"><router-view /></div>
+      <router-view />
     </div>
     <p><footnav></footnav></p>
   </div>
@@ -55,17 +55,17 @@ header {
   background: #c0c9d0;
 }
 
-.maincontent {
+.mainarticle {
   background: #c0c9d0;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   padding: 25px;
-  /* color: white; */
 }
 
 @media only screen and (max-width: 800px) {
   /* For tablets: */
   header,
-  .container,
+  .mainarticle,
   footer {
     width: 100%;
     padding: 0;
