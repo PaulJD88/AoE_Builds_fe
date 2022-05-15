@@ -11,7 +11,7 @@
         through the provided template.
       </p>
     </div>
-          <div class="image"><img src=https://picsum.photos/640/360><img /></div>
+    <div class="image"><img src=https://picsum.photos/640/360><img /></div>
     <div>
       <h3>Top Rankings</h3>
     </div>
@@ -37,5 +37,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-
+.image {
+  border: dashed purple;
+}
 </style>

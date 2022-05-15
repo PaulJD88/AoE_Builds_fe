@@ -29,18 +29,18 @@ export default {
 
 <style scoped lang="scss">
 .buildcontainer {
-  border: dashed green;
   display: flex;
-}
+  flex-wrap: wrap;
+  border: dashed green;
+  }
 
 .buildtile {
-  display: flex;
-  background: #333;
+  width: 50%;
+  background-color: #333;
   border: dashed blue;
   box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.253);
   border-radius: 5px;
-  margin: 20px 0px 20px 0;
-  padding: 10px;
+  margin: 10px;
 }
 
 h3 {
@@ -49,15 +49,16 @@ h3 {
 
 .image {
   border: dashed purple;
-  float: left;
+  display: flex;
 }
 
 .rating {
+  width: auto;
   border: dashed brown;
 }
 .insidetext {
   border: dashed black;
-  float: right;
+  width: 100%;
   font-size: 10px;
 }
 
