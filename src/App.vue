@@ -63,9 +63,21 @@ header {
 
 .buildcontainer {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  gap: 1rem;
 }
 /* Refer to individual civilisations */
+
+@media (min-width: 40em) {
+  .buildcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 60em) {
+  .buildcontainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 @media only screen and (max-width: 800px) {
   /* For tablets: */
