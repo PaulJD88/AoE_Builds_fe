@@ -1,8 +1,10 @@
 <template>
-  <div class="buildcontainer">
+  <div>
     <h1>The English</h1>
-    <div class="build" v-for="build in showBuilds" :key="build.id">
-      <CivTile :build="build"></CivTile>
+    <div class="buildcontainer">
+      <div class="build" v-for="build in showBuilds" :key="build.id">
+        <CivTile :build="build"></CivTile>
+      </div>
     </div>
   </div>
 </template>
@@ -37,5 +39,4 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<style></style>

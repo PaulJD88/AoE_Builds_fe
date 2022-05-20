@@ -1,9 +1,11 @@
 <template>
-  <div class="buildcontainer">
+  <div>
     <h1>The Holy Roman Empire</h1>
-    <div class="build">
-      <div class="build" v-for="build in showBuilds" :key="build.id">
-        <CivTile :build="build"></CivTile>
+    <div class="buildcontainer">
+      <div class="build">
+        <div class="build" v-for="build in showBuilds" :key="build.id">
+          <CivTile :build="build"></CivTile>
+        </div>
       </div>
     </div>
   </div>
@@ -39,5 +41,4 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

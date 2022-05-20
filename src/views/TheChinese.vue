@@ -1,10 +1,12 @@
 <template>
-  <div class="buildcontainer">
+<div>
     <h1>The Chinese</h1>
+  <div class="buildcontainer">
     <div class="build" v-for="build in showBuilds" :key="build.id">
       <CivTile :build="build"></CivTile>
     </div>
   </div>
+</div>
 </template>
 
 <script>

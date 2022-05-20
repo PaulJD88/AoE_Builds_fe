@@ -1,10 +1,12 @@
 <template>
+<div>
+<h1>The Abbassid Dynasty</h1>
   <div class="buildcontainer">
-    <h1>The Abbassid Dynasty</h1>
-    <div class="build" v-for="build in showBuilds" :key="build.id">
+        <div class="build" v-for="build in showBuilds" :key="build.id">
       <CivTile :build="build"></CivTile>
     </div>
   </div>
+</div>
 </template>
 
 <script>

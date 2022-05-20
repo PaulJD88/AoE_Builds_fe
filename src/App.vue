@@ -46,7 +46,7 @@ body {
 }
 
 header {
-  display: flex;
+  /* display: flex; */
   padding: 5px;
   text-align: center;
   justify-content: center;
@@ -57,10 +57,15 @@ header {
 
 .mainarticle {
   background: #c0c9d0;
-  display: flex;
   justify-content: center;
   padding: 25px;
 }
+
+.buildcontainer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+/* Refer to individual civilisations */
 
 @media only screen and (max-width: 800px) {
   /* For tablets: */
