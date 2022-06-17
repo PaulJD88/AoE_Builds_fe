@@ -2,10 +2,8 @@
   <div>
     <h1>The Mongols</h1>
     <div class="buildcontainer">
-      <div class="build">
-        <div class="build" v-for="build in showBuilds" :key="build.id">
-          <CivTile :build="build"></CivTile>
-        </div>
+      <div class="build" v-for="build in showBuilds" :key="build.id">
+        <CivTile :build="build"></CivTile>
       </div>
     </div>
   </div>

@@ -67,7 +67,7 @@ export default {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 40em) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -77,7 +77,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 40em) {
   .topnav.responsive {
     position: relative;
   }

@@ -62,8 +62,9 @@ header {
 }
 
 .buildcontainer {
+  width: 50%;
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 /* Refer to individual civilisations */
 
@@ -75,11 +76,11 @@ header {
 
 @media (min-width: 60em) {
   .buildcontainer {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 40em) {
   /* For tablets: */
   header,
   .mainarticle,
@@ -88,7 +89,7 @@ header {
     padding: 0;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 60em) {
   /* For mobile phones: */
   header,
   .container,

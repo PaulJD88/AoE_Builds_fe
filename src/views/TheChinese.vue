@@ -1,12 +1,12 @@
 <template>
-<div>
+  <div>
     <h1>The Chinese</h1>
-  <div class="buildcontainer">
-    <div class="build" v-for="build in showBuilds" :key="build.id">
-      <CivTile :build="build"></CivTile>
+    <div class="buildcontainer">
+      <div class="build" v-for="build in showBuilds" :key="build.id">
+        <CivTile :build="build"></CivTile>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -39,5 +39,4 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<style></style>
