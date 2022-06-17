@@ -16,6 +16,7 @@
     <div class="mainarticle">
       <router-view />
     </div>
+    <div class="footerbreak"></div>
     <p><footnav></footnav></p>
   </div>
 </template>
@@ -43,11 +44,9 @@ body {
   padding: 0%;
   margin: 0%;
   background: #c0c9d0;
-
 }
 
 header {
-  /* display: flex; */
   padding: 5px;
   text-align: center;
   justify-content: center;
@@ -56,6 +55,13 @@ header {
   background: #c0c9d0;
 }
 
+.footerbreak {
+  border-bottom: solid 0.1rem black;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+}
 .mainarticle {
   background: #c0c9d0;
   justify-content: center;

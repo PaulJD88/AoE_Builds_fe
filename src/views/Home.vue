@@ -18,13 +18,11 @@
     <div id="example-1">
       <button v-on:click="counter += 1">Add 1</button>
       <p>The button above has been clicked {{ counter }} times.</p>
-      <p><VueStar></VueStar></p>
     </div>
   </div>
 </template>
 
 <script>
-import VueStar from '../components/StarRating.vue'
 export default {
   data () {
     return {
@@ -32,16 +30,14 @@ export default {
     }
   },
   components: {
-    VueStar
   }
 }
 </script>
 <style scoped lang="scss">
 img {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 25px;
   display: flex;
-  padding: 10px;
 }
 </style>

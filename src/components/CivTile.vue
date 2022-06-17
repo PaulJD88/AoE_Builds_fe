@@ -1,7 +1,8 @@
 <template>
   <div class="buildtile">
     <div class="buildtilecontent">
-      <div class="image"><img src=https://picsum.photos/180/180><img /></div>
+      <h3>{{ build.build_name }}</h3>
+      <div class="image"><img src=https://picsum.photos/360/180><img /></div>
       <div class="insidetext">{{ build.build_order }}</div>
       <div class="rating"><VueStar></VueStar></div>
       <div class="link">{{ build.url }}</div>

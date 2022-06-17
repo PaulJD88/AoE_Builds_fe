@@ -1,4 +1,5 @@
 <template>
+<div>
   <footer>
     <div class="wrapper">
       <div class="icon AoESite">
@@ -27,6 +28,8 @@
       </div>
     </div>
   </footer>
+
+</div>
 </template>
 
 <script>
@@ -44,9 +47,6 @@ export default {
 <style>
 footer {
   display: flex;
-  background-color: #333;
-  padding: 10px;
-  padding-bottom: 20px;
   justify-content: center;
   text-align: center;
   font-size: 35px;
