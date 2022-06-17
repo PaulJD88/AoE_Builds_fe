@@ -43,6 +43,7 @@ body {
   padding: 0%;
   margin: 0%;
   background: #c0c9d0;
+
 }
 
 header {
@@ -62,8 +63,9 @@ header {
 }
 
 .buildcontainer {
-  width: 50%;
   display: grid;
+  justify-content: center;
+  padding: 5rem;
   gap: 1.5rem;
 }
 /* Refer to individual civilisations */
@@ -76,7 +78,13 @@ header {
 
 @media (min-width: 60em) {
   .buildcontainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 80em) {
+  .buildcontainer {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

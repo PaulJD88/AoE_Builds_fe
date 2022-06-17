@@ -43,14 +43,17 @@ export default {
 
 .dropdown-content a {
   color: black;
-  padding: 10px 5px;
+  padding: 8px 5px;
   text-decoration: none;
   display: block;
+  transition: all 1.1s ease;
+  -webkit-transition: all 1.1s ease;
 }
 
 .dropdown-content a:hover {
   background-color: #052440;
   color: white;
+  border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {

@@ -56,6 +56,8 @@ export default {
 .topnav a:hover {
   background-color: #c0c9d0;
   color: black;
+  transition: all 1.1s ease;
+  -webkit-transition: all 1.1s ease;
 }
 
 .topnav a.active {
