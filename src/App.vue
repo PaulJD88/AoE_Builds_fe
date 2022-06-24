@@ -13,6 +13,7 @@
         <h3>Build Guides & Rankings</h3>
       </div>
     </header>
+    <div class="headerbreak"></div>
     <div class="mainarticle">
       <router-view />
     </div>
@@ -55,7 +56,7 @@ header {
   background: #c0c9d0;
 }
 
-.footerbreak {
+.footerbreak, .headerbreak {
   border-bottom: solid 0.1rem black;
   margin-top: 3rem;
   margin-right: 3rem;

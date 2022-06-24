@@ -4,14 +4,15 @@
       <h3>{{ build.build_name }}</h3>
       <div class="image"><img src=https://picsum.photos/360/180><img /></div>
       <div class="insidetext">{{ build.build_order }}</div>
-      <div class="rating"><VueStar></VueStar></div>
+      <div class="rating"><VoteRating></VoteRating></div>
       <div class="link">{{ build.url }}</div>
+      <button onclick="window.location.href='build.url'"></button>
     </div>
   </div>
 </template>
 
 <script>
-import VueStar from '../components/StarRating.vue'
+import VoteRating from '../components/VoteRating.vue'
 export default {
   name: 'CivTile',
   props: {
@@ -21,9 +22,8 @@ export default {
     return {}
   },
   components: {
-    VueStar
-  },
-  methods: {}
+    VoteRating
+  }
 }
 </script>
 
