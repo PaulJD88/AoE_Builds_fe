@@ -2,11 +2,13 @@
   <div class="buildtile">
     <div class="buildtilecontent">
       <h3>{{ build.build_name }}</h3>
-      <div class="image"><img src=https://picsum.photos/360/180><img /></div>
-      <div class="insidetext">{{ build.build_order }}</div>
-      <div class="rating"><VoteRating></VoteRating></div>
-      <div class="link">{{ build.url }}</div>
-      <button onclick="window.location.href='build.url'"></button>
+      <img src=https://picsum.photos/360/360><img />
+      {{ build.build_order }}
+      <p>Rate the build</p>
+      <VoteRating></VoteRating>
+      {{ build.url }}
+      <!-- <button onclick="window.location.href='build.url'"></button>
+      <input type="button" @click="window.location.href='build.url';" value="w3docs" /> -->
     </div>
   </div>
 </template>
@@ -38,34 +40,21 @@ export default {
 
 .buildtilecontent {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
 }
 
 h3 {
   display: flex;
+  font-size: 2em;
   padding: 10px;
 }
 
 img {
-  width: 100%;
+  width: 75%;
   height: auto;
   border-radius: 25px;
-  display: flex;
   padding: 10px;
-}
-
-.rating {
-  width: auto;
-}
-.insidetext {
-  width: auto;
-  font-size: 15px;
-  color: whitesmoke;
-}
-
-.link {
-  width: 100%;
-  height: auto;
 }
 </style>

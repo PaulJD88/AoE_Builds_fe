@@ -1,5 +1,4 @@
 <template>
-<div>
   <footer>
     <div class="wrapper">
       <div class="icon AoESite">
@@ -28,8 +27,6 @@
       </div>
     </div>
   </footer>
-
-</div>
 </template>
 
 <script>

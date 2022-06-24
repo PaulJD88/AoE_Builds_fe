@@ -18,7 +18,7 @@
       <router-view />
     </div>
     <div class="footerbreak"></div>
-    <p><footnav></footnav></p>
+    <footnav></footnav>
   </div>
 </template>
 
@@ -77,19 +77,19 @@ header {
 }
 /* Refer to individual civilisations */
 
-@media (min-width: 40em) {
+@media (min-width: 45em) {
   .buildcontainer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 60em) {
+@media (min-width: 65em) {
   .buildcontainer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 80em) {
+@media (min-width: 90em) {
   .buildcontainer {
     grid-template-columns: repeat(4, 1fr);
   }
