@@ -3,8 +3,7 @@
     <div class="buildtilecontent">
       <h3>{{ build.build_name }}</h3>
       <img src=https://picsum.photos/360/360><img />
-      {{ build.build_order }}
-      <p>Rate the build</p>
+      <p>{{ build.build_order }}</p>
       <VoteRating></VoteRating>
       {{ build.url }}
       <!-- <button onclick="window.location.href='build.url'"></button>

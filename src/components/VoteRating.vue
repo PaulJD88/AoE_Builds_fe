@@ -1,6 +1,8 @@
 <template>
   <div class="voting">
-    <button v-on:click="counter += 1"><i class="far fa-thumbs-up"></i></button>
+    <button v-on:click="counter += 1">
+      <i class="far fa-thumbs-up"></i>
+    </button>
     <p>This build has {{ counter }} votes.</p>
     <button v-on:click="counter -= 1">
       <i class="far fa-thumbs-down"></i>
