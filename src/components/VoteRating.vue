@@ -27,8 +27,8 @@ export default {
   display: flex;
 }
 button {
-  width: 100px;
-  height: 70px;
+  width: 3em;
+  height: 2em;
 }
 
 p {

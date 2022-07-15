@@ -5,9 +5,7 @@
       <img src=https://picsum.photos/360/360><img />
       <p>{{ build.build_order }}</p>
       <VoteRating></VoteRating>
-      <button @click="gotoBuildUrl()">Google</button>
-      <!-- <button onclick="window.location.href='build.url'"></button>
-      <input type="button" @click="window.location.href='build.url';" value="w3docs" /> -->
+      <button @click="gotoBuildUrl()"> Click for more <i class="fas fa-arrow-right"></i> </button>
     </div>
   </div>
 </template>
@@ -53,6 +51,32 @@ h3 {
   display: flex;
   font-size: 2em;
   padding: 10px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  text-transform: uppercase;
+  font-size: 25px;
+  background: #c0c9d0;
+  border: none;
+  font-family: "Oldenburg", cursive;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 2px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.25s all ease;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(2px);
+  }
+}
+
+i {
+  margin-left: 1em;
 }
 
 img {
