@@ -5,7 +5,7 @@
       <img src=https://picsum.photos/360/360><img />
       <p>{{ build.build_order }}</p>
       <VoteRating></VoteRating>
-      {{ build.url }}
+      <button @click="gotoBuildUrl()">Google</button>
       <!-- <button onclick="window.location.href='build.url'"></button>
       <input type="button" @click="window.location.href='build.url';" value="w3docs" /> -->
     </div>
@@ -24,6 +24,11 @@ export default {
   },
   components: {
     VoteRating
+  },
+  methods: {
+    gotoBuildUrl () {
+      window.open(this.build.url, '_blank').focus()
+    }
   }
 }
 </script>
