@@ -56,7 +56,8 @@ header {
   background: #c0c9d0;
 }
 
-.footerbreak, .headerbreak {
+.footerbreak,
+.headerbreak {
   border-bottom: solid 0.1rem black;
   margin-top: 3rem;
   margin-right: 3rem;

@@ -2,8 +2,7 @@
   <div class="home">
     <div>
       <h2>Welcome</h2>
-      <h3>Thank you for visiting</h3>
-      <div class="image"><img src=https://picsum.photos/180/180><img /></div>
+      <div class="image"><img src=https://picsum.photos/360/360><img /></div>
       <p>
         Here you will find a repository for Age of Empires IV players to find
         the highest rated builds for the civilisations found in the game.
@@ -32,14 +31,19 @@ export default {
 <style scoped lang="scss">
 .home {
   margin: 20px;
-  text-align: center;
 }
+
+h2 {
+  font-size: 35px;
+}
+
 img {
   display: flex;
   width: autp;
   height: auto;
-  padding: 0.5em;
-  border-radius: 700px;
+  padding: 1em;
+  border-radius: 7em;
+  shape-outside: ellipse(360px 360px);
   float: left;
 }
 

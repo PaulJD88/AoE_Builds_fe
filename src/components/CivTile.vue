@@ -60,7 +60,7 @@ button {
   padding-bottom: 2em;
   padding-top: 1em;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 1em;
   background: #c0c9d0;
   border: none;
   font-family: "Oldenburg", cursive;
@@ -71,7 +71,7 @@ button {
   width: 100%;
   cursor: pointer;
   &:hover {
-    transform: translateY(2px);
+    transform: translateX(2px);
   }
 }
 
